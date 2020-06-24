@@ -24,7 +24,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "npm install react react-dom redux react-redux redux-thunk redux-logger @babel/core babel-loader @babel/preset-env @babel/preset-react --save",
-    "webpack": "webpack --watch --mode=development"
+    "webpack": "webpack --watch --mode=development",
+    "postinstall": "webpack"
   },
   "repository": {
     "type": "git",
@@ -36,5 +37,9 @@
   "bugs": {
     "url": "https://github.com/sheavadanesh/Artazon/issues"
   },
-  "homepage": "https://github.com/sheavadanesh/Artazon#readme"
+  "homepage": "https://github.com/sheavadanesh/Artazon#readme",
+  "engines": {
+    "node": "14.3.0",
+    "npm": "6.14.5"
+  }
 }

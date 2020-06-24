@@ -1,29 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
 const UserHome = props => {
-    // props here comes from MSP and MDP from the cointainer, which are connected and passed through as props to Greeting through connect
+
+
     const loggedInGreeting = () => (
         <div className='navbar'>
-            <div className='nav-line-container'>
-                <span className='nav-line-1' id='hello-user'>Hello, {props.currentUser.name.split(" ")[0]}</span>
-                <br></br>
-                <span className='nav-line-2'>Account & Lists</span>
-                <button type="submit" onClick={props.logout}>Sign Out</button>
+            <div className='account-dropdown'>
+                <button className='account-container' type="submit" onClick={props.logout}>
+                    <span className='nav-line-1' id='hello-user'>Hello, {props.currentUser.name.split(" ")[0]}</span>
+                    <br></br>
+                    <span className='nav-line-2'>Account & Lists ▾</span>
+                </button>
+                <div className='account-dropdown-content'>
+                    <p>stuff goes here haha</p>
+                </div>
             </div>
         </div>
     );
 
     const loggedOutGreeting = () => (
         <div className='navbar'>
-            <div className='nav-line-container'>
-                <span className='nav-line-1'>Hello, Sign in</span>
-                <br></br>
-                <span className='nav-line-2'>Account & Lists</span>
+            <div className='account-dropdown'>
                 <Link to='/login'>
-                    <button className='submit-button' id='yellow-signin'>Sign in</button>
+                    <button className='account-container'>
+                        <span className='nav-line-1'>Hello, Sign in</span>
+                        <br></br>
+                        <span className='nav-line-2'>Account & Lists ▾</span>
+                    </button>
                 </Link>
+                <div className='account-dropdown-content'>
+                    <Link to='/login'>
+                        <input className='submit-button' id='dropdown-yellow' type="submit" value="Sign in" />
+                    </Link>
+                </div>
             </div>
         </div>
     );

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { login } from '../../actions/session_actions';
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -12,12 +11,19 @@ class SessionForm extends React.Component {
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleDemoLogin = this.handleDemoLogin.bind(this);
     }
 
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.processForm(user).then(user => this.props.history.push('/'));
+    };
+
+    handleDemoLogin(e) {
+        e.preventDefault();
+        const demoUser = { email: 'bobross@br.com', password: '123456' };        
+        this.props.processForm(demoUser).then(() => this.props.history.push('/'));
     };
 
     renderErrors() {
@@ -43,17 +49,13 @@ class SessionForm extends React.Component {
         this.props.dispatchedClearErrors();
     }
 
-    demoSignin() {
-        this.props.login({ email: 'bobross@br.com', password: '123456'})
-    }
-
     render() {
         if (this.props.formType === 'signup') {
             return (
                 <div className='signup'>
                     <form onSubmit={this.handleSubmit}>
                         <div className='outer-container'>
-                            <div className='sign-in-container'>
+                            <div className='sign-in-container' id='create-account'>
                                 <h1 className='subheading'>Create account</h1>
                                 <br></br>
                                 <label className='form-input-title'>Your name
@@ -96,7 +98,8 @@ class SessionForm extends React.Component {
                                 <br></br>
                                 <br></br>
                                 <br></br>
-                                <span className='alt-link' id='agree-to-cond'>By creating an account, you agree to Artazon's Conditions of Use and Privacy Notice.</span>
+                                <span className='alt-link' id='agree-to-cond-create'>By creating an account, you agree to Artazon's Conditions of Use and Privacy Notice.</span>
+                                <br></br>
                                 <br></br>
                                 <span className='alt-link' id='already-have-account'>Already have an account? {this.props.navLink}</span>
                             </div>
@@ -110,7 +113,6 @@ class SessionForm extends React.Component {
                     <form onSubmit={this.handleSubmit}>
                         <div className='sign-in-logo'>
                             <br className='heading-spacer'></br>
-                            {/* <img id='black-artazon-logo' src={'/assets/black-artazon-logo.png'} /> */}
                         </div>
                         <div className='outer-container'>
                             <div className='sign-in-container' id='actual-sign-in'>
@@ -145,24 +147,27 @@ class SessionForm extends React.Component {
                                 <br></br>
                                 <br></br>
                                 <br></br>
-                                <span className='alt-link' id='agree-to-cond'>By creating an account, you agree to Artazon's Conditions of Use and Privacy Notice.</span>
-                                {/* <div className='demo-signin'>
-                                    <button onClick={this.demoSignin}>Demo Sign-In</button>
-                                </div> */}
+                                <span id='agree-to-cond'>By continuing, you agree to Artazon's Conditions of Use and Privacy Notice.</span>
                             </div>
                             <br></br>
                             <br></br>
-                            <span className='alt-link' id='line-break'></span>
-                            <span className='alt-link' id='new-to-artazon'>    New to Artazon?    </span>
-                            <br></br>
-                            <br></br>
-                            <Link to='/signup'>
-                                <input className='submit-button' id='gray' type="submit" value="Create your Artazon account"/>
-                            </Link>
+                            <div className='bottom-container'>
+                                <span className='alt-link' id='line-break'>------------------------------------------------------------------------------------------------------------------</span>
+                                <span className='alt-link' id='new-to-artazon'>New to Artazon?</span>
+                                <span className='alt-link' id='line-break'>------------------------------------------------------------------------------------------------------------------</span>
+                                <br></br>
+                                <br></br>
+                                <Link to='/signup'>
+                                    <input className='submit-button' id='gray' type="submit" value="Create your Artazon account"/>
+                                </Link>
+                            </div>
                             <br></br>
                             <br></br>
                         </div>
                     </form>
+                    <div className='parent-demo'>
+                        <span id='demo-signin'>Or, try our {<a id='demo-signin-link' onClick= { this.handleDemoLogin }>demo user login</a>} instead.</span>
+                    </div>
                 </div>
             );
         }

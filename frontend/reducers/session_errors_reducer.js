@@ -9,13 +9,11 @@ export default (state = [], action) => {
         case RECEIVE_SESSION_ERRORS:
             return action.errors;
         case CLEAR_SESSION_ERRORS:
-            // delete action.errors;
             return [];
         case RECEIVE_CURRENT_USER:
             return [];
             
         default:
-            // delete action.errors;
             return state;
     }
 };
