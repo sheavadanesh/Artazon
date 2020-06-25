@@ -7,13 +7,13 @@ const UserHome = props => {
     const loggedInGreeting = () => (
         <div className='navbar'>
             <div className='account-dropdown'>
-                <button className='account-container' type="submit" onClick={props.logout}>
+                <button className='account-container'>
                     <span className='nav-line-1' id='hello-user'>Hello, {props.currentUser.name.split(" ")[0]}</span>
                     <br></br>
                     <span className='nav-line-2'>Account & Lists ▾</span>
                 </button>
                 <div className='account-dropdown-content'>
-                    <p>stuff goes here haha</p>
+                    <button className='alt-link' id='sign-out-dropdown' type='submit' onClick={props.logout}>Sign Out</button>
                 </div>
             </div>
         </div>
@@ -32,6 +32,8 @@ const UserHome = props => {
                 <div className='account-dropdown-content'>
                     <Link to='/login'>
                         <input className='submit-button' id='dropdown-yellow' type="submit" value="Sign in" />
+                        <br></br>
+                        <a className='alt-link' id='new-customer-dropdown'>New customer? <Link to='/signup' id='start-here-link'>Start here.</Link></a>
                     </Link>
                 </div>
             </div>
