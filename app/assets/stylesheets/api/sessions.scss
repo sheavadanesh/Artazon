@@ -3,18 +3,18 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .signup {
-    background: white;
+    // background: white;
 }
 
 .sign-in {
-    background-color: white;
+    // background-color: white;
     width: 100%;
     height: 100%;
     border: 0;
     margin: 0;
     box-sizing: border-box;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
 .sign-in-container {
@@ -32,6 +32,7 @@
     display: inline-block;
     position: relative;
     z-index: 1;
+    top: 60px;
 }
 
 #create-account {
@@ -52,6 +53,7 @@
 .parent-demo {
     text-align: center;
     padding-bottom: 200px;
+    margin-top: 3px;
 }
 
 #demo-signin-link {
@@ -69,15 +71,15 @@
     text-align: center;
     margin-bottom: -24px;
     padding: 20px 0px 0px 0px;
-    z-index: 0;
-    background: white;
+    // z-index: 0;
+    // background: white;
 }
 
 .outer-container-create {
     text-align: center;
     padding: 20px 0px 200px 0px;
-    z-index: 0;
-    background: white;
+    // z-index: 0;
+    // background: white;
 }
 
 .subheading {
@@ -116,7 +118,7 @@
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 13px;
     color: #111111;
-    margin-top: -1em;
+    margin-top: -7px;
     background-image: linear-gradient(to bottom, rgba(220, 226, 226, 0.0), rgba(220, 226, 226, 1));
     border-color: #adb1b8 #a2a6ac #8d9096;
     border-width: thin;
@@ -134,6 +136,7 @@
     color: #767676;
     text-align: center;
     padding-top: 2px;
+    margin-top: 54px;
 }
 
 .alt-link{
@@ -182,8 +185,25 @@
     color: #a6a6a6;
 }
 
-.alt-link#new-customer-dropdown {
-    // padding-bottom: 50px;
+.alt-link#sign-out-dropdown {
+    border-radius: 3px;
+    width: 90px;
+    height: 25px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 13px;
+    color: #111111;
+    margin-top: 34px;
+    background-image: linear-gradient(to bottom, rgba(220, 226, 226, 0.0), rgba(220, 226, 226, 1));
+    border-color: #adb1b8 #a2a6ac #8d9096;
+    border-width: thin;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+
+}
+
+.alt-link#sign-out-dropdown:hover {
+    background-image: linear-gradient(to bottom,rgba(206, 207, 207, 0.3), rgba(206, 207, 207, 0.7));
 }
 
 .alt-link#agree-to-cond-create {
@@ -247,14 +267,14 @@
 .heading-spacer {
     padding: 5px;
     margin: auto;
-    background: white;
+    // background: white;
 }
 
 .heading-spacer#create-spacer {
-    background: white;
+    // background: white;
 }
 
 .sign-in-logo {
-    background-color: white;
+    // background-color: white;
     box-sizing: border-box;
 }
