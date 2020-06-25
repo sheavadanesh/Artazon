@@ -2,10 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.signup {
+    background: white;
+}
+
 .sign-in {
     background-color: white;
     width: 100%;
     height: 100%;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
 }
 
 .sign-in-container {
@@ -21,6 +30,8 @@
     font-size: 13px;
     font-weight: bold;
     display: inline-block;
+    position: relative;
+    z-index: 1;
 }
 
 #create-account {
@@ -35,10 +46,12 @@
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 11.5px;
     color: #111111;
+    z-index: 3;
 }
 
 .parent-demo {
     text-align: center;
+    padding-bottom: 200px;
 }
 
 #demo-signin-link {
@@ -54,8 +67,20 @@
 
 .outer-container {
     text-align: center;
-    margin-top: 8%;
+    margin-top: 20px;
     margin-bottom: -24px;
+    padding: 0px 0px 0% 0px;
+    z-index: 0;
+    background: white;
+}
+
+.outer-container-create {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -24px;
+    padding: 35px 0px 200px 0px;
+    z-index: 0;
+    background: white;
 }
 
 .subheading {
@@ -78,8 +103,6 @@
     margin-top: 1px;
     position: absolute;
     background-image: linear-gradient(to bottom, rgba(240, 193, 75, 0.3), rgba(240, 193, 75, 1));
-    /* background-image: linear-gradient(to bottom, rgb(240, 193, 75), rgb(240, 193, 75)); */
-
     border-color: #a88734 #9c7e31 #846a29;
     border-width: thin;
     cursor: pointer;
@@ -87,7 +110,6 @@
 
 #yellow:hover {
     background-image: linear-gradient(to bottom, rgba(240, 193, 75, 0.5), rgba(240, 193, 75, 1));
-    /* background-image: linear-gradient(to bottom, rgb(240, 193, 75), rgb(240, 193, 75)); */
 }
 
 #gray {
@@ -99,7 +121,6 @@
     color: #111111;
     margin-top: -1em;
     background-image: linear-gradient(to bottom, rgba(220, 226, 226, 0.0), rgba(220, 226, 226, 1));
-    /* background-image: linear-gradient(to bottom, rgb(220, 226, 226), rgba(220, 226, 226, 1)); */
     border-color: #adb1b8 #a2a6ac #8d9096;
     border-width: thin;
     cursor: pointer;
@@ -109,7 +130,6 @@
 
 #gray:hover {
     background-image: linear-gradient(to bottom,rgba(206, 207, 207, 0.3), rgba(206, 207, 207, 0.7));
-    /* background-image: linear-gradient(to bottom,rgb(206, 207, 207), rgb(206, 207, 207)); */
 }
 
 .bottom-container {
@@ -144,6 +164,7 @@
 .alt-link#already-have-account{
     display: block;
     text-align: left;
+    position: absolute;
     height: 10px;
     border-top: 1px solid rgba(204, 204, 204, 0.623);
     padding-top: 10px;
@@ -164,26 +185,26 @@
     color: #a6a6a6;
 }
 
-#agree-to-cond {
+.agree-to-cond {
     color: #111111;
     font-weight: lighter;
     font-size: 11px;
     margin: auto;
     width: inherit;
     text-align: left;
-    position: fixed;
+    position: absolute;
     padding: 3px;
     line-height: 17px;
 }
 
-#agree-to-cond-create {
+.alt-link#agree-to-cond-create {
     color: #111111;
     font-weight: lighter;
     font-size: 11px;
     margin: auto;
     width: inherit;
     text-align: left;
-    position: fixed;
+    position: absolute;
     padding: 3px;
     padding-bottom: 20px;
     line-height: 17px;
@@ -225,4 +246,16 @@
 .heading-spacer {
     padding: 5px;
     margin: auto;
+    background: white;
+}
+
+// .heading-spacer#create-spacer {
+//     padding: 30px;
+//     margin: auto;
+//     background: white;
+// }
+
+.sign-in-logo {
+    background-color: white;
+    box-sizing: border-box;
 }

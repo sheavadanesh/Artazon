@@ -53,8 +53,9 @@ class SessionForm extends React.Component {
         if (this.props.formType === 'signup') {
             return (
                 <div className='signup'>
+                    <br className='heading-spacer' id='create-spacer'></br>
                     <form onSubmit={this.handleSubmit}>
-                        <div className='outer-container'>
+                        <div className='outer-container-create'>
                             <div className='sign-in-container' id='create-account'>
                                 <h1 className='subheading'>Create account</h1>
                                 <br></br>
@@ -147,7 +148,7 @@ class SessionForm extends React.Component {
                                 <br></br>
                                 <br></br>
                                 <br></br>
-                                <span id='agree-to-cond'>By continuing, you agree to Artazon's Conditions of Use and Privacy Notice.</span>
+                                <span class='agree-to-cond'>By continuing, you agree to Artazon's Conditions of Use and Privacy Notice.</span>
                             </div>
                             <br></br>
                             <br></br>
