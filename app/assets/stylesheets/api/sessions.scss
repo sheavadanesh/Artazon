@@ -24,7 +24,7 @@
     width: 315px;
     min-height: 295px;
     text-align: left;
-    padding: 20px 15px 15px 26px;
+    padding: 0px 15px 15px 26px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: #111111;
     font-size: 13px;
@@ -67,7 +67,6 @@
 
 .outer-container {
     text-align: center;
-    margin-top: 15px;
     margin-bottom: -24px;
     padding: 0px 0px 0px 0px;
     z-index: 0;
@@ -76,8 +75,7 @@
 
 .outer-container-create {
     text-align: center;
-    margin-top: 15px;
-    margin-bottom: -24px;
+    margin-top: 50px;
     padding: 15px 0px 200px 0px;
     z-index: 0;
     background: white;
@@ -249,11 +247,9 @@
     background: white;
 }
 
-// .heading-spacer#create-spacer {
-//     padding: 30px;
-//     margin: auto;
-//     background: white;
-// }
+.heading-spacer#create-spacer {
+    background: white;
+}
 
 .sign-in-logo {
     background-color: white;

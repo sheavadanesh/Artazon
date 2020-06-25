@@ -53,8 +53,8 @@ class SessionForm extends React.Component {
         if (this.props.formType === 'signup') {
             return (
                 <div className='signup'>
-                    <br className='heading-spacer' id='create-spacer'></br>
                     <form onSubmit={this.handleSubmit}>
+                    <br className='heading-spacer' id='create-spacer'></br>
                         <div className='outer-container-create'>
                             <div className='sign-in-container' id='create-account'>
                                 <h1 className='subheading'>Create account</h1>
