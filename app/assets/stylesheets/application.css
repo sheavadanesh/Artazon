@@ -97,6 +97,7 @@
 .account-dropdown-content {
     display: none;
     background-color: #f9f9f9;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
@@ -122,14 +123,16 @@
     margin-bottom: 2px;
     margin-top: 1px;
     position: absolute;
-    background-image: linear-gradient(to bottom, rgb(240, 193, 75, 0.3), rgb(240, 193, 75, 1));
+    /* background-image: linear-gradient(to bottom, rgb(240, 193, 75, 0.3), rgb(240, 193, 75, 1)); */
+    background-image: linear-gradient(to bottom, rgb(240, 193, 75), rgb(240, 193, 75));
     border-color: #a88734 #9c7e31 #846a29;
     border-width: thin;
     cursor: pointer;
 }
 
 #dropdown-yellow:hover {
-    background-image: linear-gradient(to bottom, rgb(240, 193, 75, 0.5), rgb(240, 193, 75, 1));
+    /* background-image: linear-gradient(to bottom, rgb(240, 193, 75, 0.5), rgb(240, 193, 75, 1)); */
+    background-image: linear-gradient(to bottom, rgb(240, 193, 75), rgb(240, 193, 75));
 }
 
 .sign-in {
@@ -207,14 +210,17 @@
     margin-bottom: 2px;
     margin-top: 1px;
     position: absolute;
-    background-image: linear-gradient(to bottom, rgb(240, 193, 75, 0.3), rgb(240, 193, 75, 1));
+    /* background-image: linear-gradient(to bottom, rgb(240, 193, 75, 0.3), rgb(240, 193, 75, 1)); */
+    background-image: linear-gradient(to bottom, rgb(240, 193, 75), rgb(240, 193, 75));
+
     border-color: #a88734 #9c7e31 #846a29;
     border-width: thin;
     cursor: pointer;
 }
 
 #yellow:hover {
-    background-image: linear-gradient(to bottom, rgb(240, 193, 75, 0.5), rgb(240, 193, 75, 1));
+    /* background-image: linear-gradient(to bottom, rgb(240, 193, 75, 0.5), rgb(240, 193, 75, 1)); */
+    background-image: linear-gradient(to bottom, rgb(240, 193, 75), rgb(240, 193, 75));
 }
 
 #gray {
@@ -225,7 +231,8 @@
     font-size: 13px;
     color: #111111;
     margin-top: -1em;
-    background-image: linear-gradient(to bottom, rgb(220, 226, 226, 0.0), rgba(220, 226, 226, 1));
+    /* background-image: linear-gradient(to bottom, rgb(220, 226, 226, 0.0), rgba(220, 226, 226, 1)); */
+    background-image: linear-gradient(to bottom, rgb(220, 226, 226), rgba(220, 226, 226, 1));
     border-color: #adb1b8 #a2a6ac #8d9096;
     border-width: thin;
     cursor: pointer;
@@ -234,7 +241,8 @@
 }
 
 #gray:hover {
-    background-image: linear-gradient(to bottom,rgb(206, 207, 207, 0.3), rgb(206, 207, 207, 0.7));
+    /* background-image: linear-gradient(to bottom,rgb(206, 207, 207, 0.3), rgb(206, 207, 207, 0.7)); */
+    background-image: linear-gradient(to bottom,rgb(206, 207, 207), rgb(206, 207, 207));
 }
 
 .bottom-container {
