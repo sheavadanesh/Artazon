@@ -11,7 +11,7 @@ const App = () => (
             <div className='navbar'>
                 <Link to='/'>
                     <div className='nav-logo'>
-                        <img id='artazon-logo' src={'/assets/artazon_logo.png'}/>
+                        <img id='artazon-logo' src={'artazon_logo.png'}/>
                     </div>
                 </Link>
                 <Route exact path='/' component={UserHomeContainer}/>
