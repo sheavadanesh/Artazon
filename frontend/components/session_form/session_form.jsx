@@ -30,10 +30,10 @@ class SessionForm extends React.Component {
         return (
             <div>
                 {this.props.errors.map((error, i) => (
-                    <a key={`error-${i}`}>
+                    <span key={`error-${i}`}>
                         <br className='err-spacer'></br>
                         {error}
-                    </a>
+                    </span>
                 ))}
             </div>
         );
@@ -167,7 +167,7 @@ class SessionForm extends React.Component {
                         </div>
                     </form>
                     <div className='parent-demo'>
-                        <span id='demo-signin'>Or, try our {<a id='demo-signin-link' onClick= { this.handleDemoLogin }>demo user login</a>} instead.</span>
+                        <span id='demo-signin'>Or, try our {<span id='demo-signin-link' onClick= { this.handleDemoLogin }>demo user login</span>} instead.</span>
                     </div>
                 </div>
             );

@@ -24,7 +24,7 @@
     width: 315px;
     min-height: 295px;
     text-align: left;
-    padding: 0px 15px 15px 26px;
+    padding: 18px 15px 15px 26px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: #111111;
     font-size: 13px;
@@ -68,15 +68,14 @@
 .outer-container {
     text-align: center;
     margin-bottom: -24px;
-    padding: 0px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
     z-index: 0;
     background: white;
 }
 
 .outer-container-create {
     text-align: center;
-    margin-top: 50px;
-    padding: 15px 0px 200px 0px;
+    padding: 20px 0px 200px 0px;
     z-index: 0;
     background: white;
 }
@@ -183,16 +182,8 @@
     color: #a6a6a6;
 }
 
-.agree-to-cond {
-    color: #111111;
-    font-weight: lighter;
-    font-size: 11px;
-    margin: auto;
-    width: inherit;
-    text-align: left;
-    position: absolute;
-    padding: 3px;
-    line-height: 17px;
+.alt-link#new-customer-dropdown {
+    // padding-bottom: 50px;
 }
 
 .alt-link#agree-to-cond-create {
@@ -205,6 +196,18 @@
     position: absolute;
     padding: 3px;
     padding-bottom: 20px;
+    line-height: 17px;
+}
+
+.agree-to-cond {
+    color: #111111;
+    font-weight: lighter;
+    font-size: 11px;
+    margin: auto;
+    width: inherit;
+    text-align: left;
+    position: absolute;
+    padding: 3px;
     line-height: 17px;
 }
 

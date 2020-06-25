@@ -16,6 +16,9 @@ const UserHome = props => {
                     <button className='alt-link' id='sign-out-dropdown' type='submit' onClick={props.logout}>Sign Out</button>
                 </div>
             </div>
+            <div className='sub-navbar'>
+                <p>categories go here</p>
+            </div>
         </div>
     );
 
@@ -32,10 +35,12 @@ const UserHome = props => {
                 <div className='account-dropdown-content'>
                     <Link to='/login'>
                         <input className='submit-button' id='dropdown-yellow' type="submit" value="Sign in" />
-                        <br></br>
-                        <a className='alt-link' id='new-customer-dropdown'>New customer? <Link to='/signup' id='start-here-link'>Start here.</Link></a>
                     </Link>
+                    <span className='alt-link' id='new-customer-dropdown'>New customer? <Link to='/signup' id='start-here-link'>Start here.</Link></span>
                 </div>
+            </div>
+            <div className='sub-navbar'>
+                <p>categories go here</p>
             </div>
         </div>
     );
