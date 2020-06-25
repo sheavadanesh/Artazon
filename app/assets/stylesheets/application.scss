@@ -95,13 +95,18 @@
 
 .account-dropdown::before {
     content: "";
-    display: block;
     position: absolute;
     right: 34px;
     top: 46px;
-    border-bottom: 10px solid #fff;
+    z-index: 6;
+    border-bottom: 10px solid white;
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
+    display: none;
+}
+
+.account-dropdown-container:hover .account-dropdown::before {
+    display: block;
 }
 
 .account-dropdown-content {
@@ -123,7 +128,7 @@
     position: relative;
 }
 
-.account-dropdown:hover .account-dropdown-content {
+.account-dropdown-container:hover .account-dropdown-content {
     display: flex;
     text-align: center;
     position: absolute;
