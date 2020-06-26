@@ -2,14 +2,17 @@ import React from 'react';
 import UserHomeContainer from './user_home/user_home_container';
 import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
+import ItemShowContainer from './items/item_show_container';
 import { Link, Switch, Route } from 'react-router-dom';
 
 const App = () => (
     <div className='app'>
         <UserHomeContainer/>
+        <ItemShowContainer/>
         <Switch>
             <Route path='/login' component={LoginFormContainer} />
             <Route path='/signup' component={SignupFormContainer} />
+            {/* <Route path='/api/item' component={ItemShowContainer} /> */}
             {/* may cause problems because this is not redirecting */}
             {/* write any other routes about the / route and inside
             of this switch tag */}
@@ -24,7 +27,7 @@ const App = () => (
                     <li>Contact Information????</li>
                 </div>
                 <div className='footer-logo'>
-                    
+
                 </div>
             </div>
         </footer>

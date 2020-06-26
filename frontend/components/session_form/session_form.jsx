@@ -148,7 +148,7 @@ class SessionForm extends React.Component {
                                 <br></br>
                                 <br></br>
                                 <br></br>
-                                <span class='agree-to-cond'>By continuing, you agree to Artazon's Conditions of Use and Privacy Notice.</span>
+                                <span className='agree-to-cond'>By continuing, you agree to Artazon's Conditions of Use and Privacy Notice.</span>
                             </div>
                             <br></br>
                             <br></br>
