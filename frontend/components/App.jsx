@@ -6,21 +6,28 @@ import { Link, Switch, Route } from 'react-router-dom';
 
 const App = () => (
     <div className='app'>
-            <div className='navbar'>
-            <Link to='/'>
-                <div className='nav-logo'>
-                    <div id='artazon-logo'/>
+        <UserHomeContainer/>
+        <Switch>
+            <Route path='/login' component={LoginFormContainer} />
+            <Route path='/signup' component={SignupFormContainer} />
+            {/* may cause problems because this is not redirecting */}
+            {/* write any other routes about the / route and inside
+            of this switch tag */}
+        </Switch>
+        <footer className='footer'>
+            <div className='back-to-top'>
+                <span>Back to top</span>
+            </div>
+            <div className='bottom-footer'>
+                <div className='get-to-know'>Get to Know the Creator
+                    <li id='first'>Link to LinkedIn/Github/</li>
+                    <li>Contact Information????</li>
                 </div>
-            </Link>
-            <Switch>
-                <Route path='/login' component={LoginFormContainer} />
-                <Route path='/signup' component={SignupFormContainer} />
-                <Route path='/' component={UserHomeContainer}/>
-                {/* may cause problems because this is not redirecting */}
-                {/* write any other routes about the / route and inside
-                of this switch tag */}
-            </Switch>
-    </div>
+                <div className='footer-logo'>
+                    
+                </div>
+            </div>
+        </footer>
     </div>
 );
 
