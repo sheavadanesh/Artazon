@@ -9,3 +9,7 @@
 User.destroy_all
 
 demo_user = User.create!(name: 'Bob Ross', email: 'bobross@br.com', password:'123456')
+
+Item.destroy_all
+
+test = Item.create!(title: "Persistence of Memory", artist: "Salvador Dali", year: 1930, description: "cool", style: 'Surrealism', media_type: 'Painting', price: 100.00)

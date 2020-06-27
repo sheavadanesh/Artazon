@@ -8,11 +8,11 @@ import { Link, Switch, Route } from 'react-router-dom';
 const App = () => (
     <div className='app'>
         <UserHomeContainer/>
-        <ItemShowContainer/>
+        {/* <ItemShowContainer/> */}
         <Switch>
             <Route path='/login' component={LoginFormContainer} />
             <Route path='/signup' component={SignupFormContainer} />
-            {/* <Route path='/api/item' component={ItemShowContainer} /> */}
+            <Route path='/api/item' component={ItemShowContainer} />
             {/* may cause problems because this is not redirecting */}
             {/* write any other routes about the / route and inside
             of this switch tag */}
