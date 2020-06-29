@@ -1,4 +1,4 @@
-json.extract! @item :id, 
+json.extract! @item, :id, 
                     :title, 
                     :artist, 
                     :year, 

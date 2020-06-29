@@ -1,6 +1,6 @@
 import { RECEIVE_ALL_ITEMS, RECEIVE_ITEM } from '../actions/item_actions';
 
-const ItemsReducer = (oldState = {}, action) => {
+const itemsReducer = (oldState = {}, action) => {
     Object.freeze(oldState);
     let nextState = Object.assign({}, oldState);
 
@@ -16,4 +16,4 @@ const ItemsReducer = (oldState = {}, action) => {
     }
 };
 
-export default ItemsReducer;
+export default itemsReducer;

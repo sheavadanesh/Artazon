@@ -1,3 +1,69 @@
 // Place all the styles related to the api/items controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.item-show {
+    background-color: white;
+    min-height: 700px;
+    width: 100%;
+    display: flex;
+    padding-top: 38px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.item-img-container {
+    position: inline-block;
+    max-width: 960px;
+    min-height: 440px;
+    border: 1px solid red;
+    padding: 15px;
+}
+
+.item-text-container {
+    display: flex;
+    min-width: 350px;
+    min-height: 350px;
+    border: 1px solid blue;
+    padding: 15px;
+    .item-title-header {
+        position: absolute;
+        .item-title {
+            font-size: 22px;
+            font-weight: normal;
+        }
+    }
+    .item-show-col1, .item-show-col2 {
+        padding-top: 60px;
+        display: inline-block;
+        // position: absolute;
+        font-size: 14px;
+        color: #888888;
+        font-weight: normal;
+        position: inline-block;
+    }
+    p {
+        font-weight: bold;
+        color: #111111;
+    }
+    #price {
+        color: #B12704;
+        .price-num {
+            color: #B12704;
+            font-size: 17px;
+        }
+    }
+
+}
+
+.item-show-cart-container {
+    position: inline-block;
+    min-width: 250px;
+    min-height: 460px;
+    border: 1px solid green;
+    padding: 15px;
+}
+
+.customer-reviews {
+    position: block;
+    min-height: 400px; 
+}
