@@ -6,10 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+require 'open-uri'
+
 User.destroy_all
 
 demo_user = User.create!(name: 'Bob Ross', email: 'bobross@br.com', password:'123456')
 
 Item.destroy_all
 
-test = Item.create!(title: "Persistence of Memory", artist: "Salvador Dali", year: 1930, description: "cool", style: 'Surrealism', media_type: 'Painting', price: 100.00)
+test = Item.new(title: "The Persistence of Memory", artist: "Salvador Dali", year: 1930, description: "cool", style: 'Surrealism', media_type: 'Painting', price: 100.00)
+file = open('https://www.phaidon.com/resource/persistenceofmemory1931.jpg')
+test.photo.attach(io: file, filename: 'persistence.jpg')
+test.save!

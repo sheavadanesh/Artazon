@@ -6,3 +6,7 @@ json.extract! @item, :id,
                     :style,
                     :media_type,
                     :price
+
+if @item.photo.attached?
+    json.photoUrl url_for(@item.photo)
+end

@@ -36,5 +36,7 @@ class Item < ApplicationRecord
     validates :style, presence: true, inclusion: { in: STYLES }
     validates :title, :year, :description, :price, presence: true
 
+    has_one_attached :photo
+    
     has_many :reviews, class_name: "Review", foreign_key: :item_id
 end

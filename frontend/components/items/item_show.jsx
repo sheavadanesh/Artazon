@@ -19,6 +19,7 @@ class ItemShow extends React.Component {
     render() {
         const { item } = this.props;
         if (item === undefined) return null;
+        console.log(item);
         return (
             <div className='item-show'>
                 <div className='item-img-container'>
@@ -26,23 +27,50 @@ class ItemShow extends React.Component {
 
                     </div>
                     <span className='item-img'>
-                        
+                        <img src={item.photoUrl}></img>
                     </span>
                 </div>
                 <div className='item-text-container'>
                     <div className='item-title-header'>
                         <h1 className='item-title'>{item.title}</h1>
                     </div>
-                    <label className='item-show-col1' id='price'>Price: <p className='price-num'>${item.price}</p></label>
-                    <br></br>
-                    <label className='item-show-col1'>Artist: <p>{item.artist}</p></label><label className='item-show-col2'>Year: <p>{item.year}</p></label>
-                    <br></br>
-                    <label className='item-show-col1'> Style: <p>{item.style}</p></label><label className='item-show-col2'>Type: <p>{item.media_type}</p></label>
-                    <br></br>
-                    <label className='item-show-col1'>Description: <p>{item.description}</p></label>
+                    <span className='rating-preview'>
+                        rating
+                    </span>
+                    <label className='price'>Price:  
+                        <span className='price-num'>  ${item.price}<span className='free-ship' id='mid-text'> & FREE Shipping.</span></span>
+                    </label>
+                    <div className='show-col1'>
+                        <label className='item-show-col1'>Artist:<span>  {item.artist}</span></label>
+                        <br></br>
+                        <label className='item-show-col1'> Style:<span>  {item.style}</span></label>
+                        <br></br>
+                        <label className='item-show-col1' id='about'>About this item
+                            <br></br>
+                            <span id='description'>{item.description}</span>
+                        </label>
+                    </div>
+                    <div className='show-col2'>
+                        <label className='item-show-col2'>Year:  <span>  {item.year}</span></label>
+                        <br></br>
+                        <label className='item-show-col2'>Type:  <span>  {item.media_type}</span></label>
+                    </div>
+                    <span className='line-break-about'></span>
                 </div>
                 <div className='item-show-cart-container'>
-                    shopping cart goes here
+                    <span className='price-num' id='side-cont'>${item.price}</span>
+                    <br></br>
+                    <span className='free-ship' id='cart-text'> & FREE Shipping.</span>
+                    <br></br>
+                    <span className='in-stock'>In Stock.</span>
+                    <br></br>
+                    <div className='quantity-dropdown'>
+
+                    </div>
+                    <br></br>
+                    <button>Add to Cart</button>
+                    <br></br>
+                    <button>Buy Now</button>
                 </div>
                 <div className='customer-reviews'>
                     customer reviews go here
