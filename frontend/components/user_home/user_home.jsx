@@ -25,7 +25,7 @@ const UserHome = props => {
                 </div>
             </div>
             <div className='sub-navbar'>
-                <p>categories go here</p>
+                <p> </p>
             </div>
         </div>
     );
@@ -57,7 +57,7 @@ const UserHome = props => {
                 </div> 
             </div>
             <div className='sub-navbar'>
-                <p>categories go here</p>
+                <p> </p>
             </div>
         </div>
     );

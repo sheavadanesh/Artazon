@@ -1,0 +1,1 @@
+export const selectItems = state => Object.values(state.entities.items)
