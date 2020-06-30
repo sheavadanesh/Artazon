@@ -2,10 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.show {
+    background-color: white;
+}
+
 .item-show {
     background-color: white;
-    min-height: 700px;
-    max-width: 100%;
+    min-height: 500px;
+    width: 100%;
     display: flex;
     padding-top: 38px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -13,15 +17,14 @@
 
 .item-img-container {
     min-width: 400px;
-    min-height: 440px;
-    padding: 60px;
+    padding: 60px 10px 0px 40px;
     display: flex;
     .item-img {
         text-align: center;
         .item-photo {
             margin: auto;
-            max-width: 400px;
-            max-height: 400px;
+            max-width: 350px;
+            max-height: 350px;
             position: absolute;
         }
     }
@@ -29,9 +32,10 @@
 
 .item-text-container {
     display: flex;
-    max-width: 300px;
-    min-height: 350px;
-    padding: 15px;
+    max-width: 280px;
+    margin-left: -20px;
+    margin-right: 20px;
+    padding-top: 40px;
     justify-content: space-between;
     .item-title-header {
         position: absolute;
@@ -43,12 +47,12 @@
         .line-break-title {
         background-color: transparent;
         border-top: 1px solid #e7e7e7;
-        top: 75px;
-        width: 245px;
+        top: 85px;
+        width: 250px;
     }
     }
     .rating-preview {
-        padding-top: 50px;
+        padding-top: 60px;
         font-size: 13px;
         color: #0066C0;
         line-height: 10px;
@@ -56,12 +60,12 @@
     }
     .show-col1 {
         min-width: 300px;
-        padding: 150px 60px 0px 0px;
+        padding-top: 150px;
         font-size: 13px;
         color: #555555;
         font-weight: lighter;
         float: left;
-        .item-show-col1, .item-show-col2 {
+        .item-show-col1 {
             line-height: 25px;
         }
     }
@@ -75,30 +79,25 @@
     .line-break-about {
         background-color: transparent;
         border-top: 1px solid #e7e7e7;
-        top: 325px;
-        width: 245px;
+        top: 400px;
+        width: 250px;
     }
-    
     #about {
-        min-width: 200px;
         color: black;
         font-weight: bold;
         font-size: 16px;
         line-height: 74px;
-       
     }
-
     #description {
         font-weight: normal;
         font-size: 13px;
         line-height: 5px;
-        margin-top: -16px;
+        margin-top: -10px;
     }
 }
-
 .price {
     position: absolute;
-    padding-top: 90px;
+    padding-top: 100px;
     color: #555555;
     font-size: 14px;
     z-index: 2;
@@ -107,30 +106,33 @@
         color: #B12704;
         font-size: 18px;
         font-weight: normal;
+        text-align: center;
     }
     #mid-text {
         font-weight: lighter;
         position: absolute;
         display: inline-block;
+        margin-top: 4px;
+        width: 100px;
+        padding-left: 7px;
     }
-
 }
 
 .free-ship {
     font-size: 13px;
     color: #111111;
     font-weight: lighter;
-    display: flex;
+    display: block;
 }
 
 .item-show-cart-container {
     display: inline-block;
-    min-width: 250px;
-    min-height: 460px;
+    min-width: 210px;
+    max-height: 350px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 15px;
-    margin: 28px 0px 10px 0px;
+    padding: 20px;
+    margin: 50px 0px 10px 0px;
     #side-cont {
         color: #B12704;
         font-size: 18px;
@@ -142,7 +144,6 @@
     .in-stock {
         color: #007600;
         font-size: 17px;
-        // padding-top: 25px;
         position: absolute;
         top: 280px;
     }
@@ -169,7 +170,7 @@
         border-radius: 3px;
         width: 206px;
         height: 30px;
-        padding: 3px 7px;
+        padding: 6px 7px;
         top: 375px;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         font-size: 13px;
@@ -180,16 +181,23 @@
         border-width: thin;
         cursor: pointer;
         box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
-
     }
     .add-to-cart:hover {
         background-image: linear-gradient(to bottom, rgba(248, 196, 66, 0.5), rgba(240, 193, 75, 1));
     }
+    .cart-logo, .buy-now-logo {
+        float: left;
+        width: 24px;
+        height: 24px;
+        margin-top: -4px;
+        margin-left: -5px;
+    }
+
     .buy-now {
         border-radius: 3px;
         width: 206px;
         height: 30px;
-        padding: 3px 7px;
+        padding: 6px 7px;
         top: 417px;
         font-family: "Trebuchet MS", Helvetica, sans-serif;
         font-size: 13px;
@@ -208,6 +216,18 @@
 }
 
 .customer-reviews {
-    position: block;
-    min-height: 400px; 
+    position: relative;
+    min-height: 300px; 
+    background-color: white;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+.review-heading {
+    font-size: 22px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #111111;
+
 }

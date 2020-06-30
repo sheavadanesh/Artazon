@@ -36,6 +36,8 @@
     box-sizing: border-box;
     z-index: 3;
     display: flex;
+    width: 100%;
+    // min-width: 960px;
 }
 
 .account-container {
