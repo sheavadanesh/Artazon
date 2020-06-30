@@ -15,6 +15,6 @@ demo_user = User.create!(name: 'Bob Ross', email: 'bobross@br.com', password:'12
 Item.destroy_all
 
 test = Item.new(title: "The Persistence of Memory", artist: "Salvador Dali", year: 1930, description: "cool", style: 'Surrealism', media_type: 'Painting', price: 100.00)
-file = open('https://www.phaidon.com/resource/persistenceofmemory1931.jpg')
+file = open('https://artazon-seeds.s3-us-west-1.amazonaws.com/the_persistence_of_memory.jpg')
 test.photo.attach(io: file, filename: 'persistence.jpg')
 test.save!

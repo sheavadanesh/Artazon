@@ -12,26 +12,40 @@
 }
 
 .item-img-container {
-    position: inline-block;
-    min-width: 200px;
+    min-width: 400px;
     min-height: 440px;
-    border: 1px solid red;
-    padding: 15px;
+    padding: 60px;
+    display: flex;
+    .item-img {
+        text-align: center;
+        .item-photo {
+            margin: auto;
+            max-width: 400px;
+            max-height: 400px;
+            position: absolute;
+        }
+    }
 }
 
 .item-text-container {
     display: flex;
-    min-width: 250px;
+    max-width: 300px;
     min-height: 350px;
-    // border: 1px solid blue;
     padding: 15px;
     justify-content: space-between;
     .item-title-header {
         position: absolute;
+        min-width: 300px;
         .item-title {
             font-size: 22px;
             font-weight: normal;
         }
+        .line-break-title {
+        background-color: transparent;
+        border-top: 1px solid #e7e7e7;
+        top: 75px;
+        width: 245px;
+    }
     }
     .rating-preview {
         padding-top: 50px;
@@ -41,24 +55,13 @@
         font-weight: normal;
     }
     .show-col1 {
+        min-width: 300px;
         padding: 150px 60px 0px 0px;
         font-size: 13px;
         color: #555555;
         font-weight: lighter;
-        z-index: 1;
         float: left;
-        .item-show-col1 {
-            line-height: 25px;
-            width: 200px;
-        }
-    }
-    .show-col2 {
-        padding: 150px 75px 0px 0px;
-        font-size: 13px;
-        color: #555555;
-        font-weight: lighter;
-        float: right;
-        .item-show-col2 {
+        .item-show-col1, .item-show-col2 {
             line-height: 25px;
         }
     }
@@ -77,6 +80,7 @@
     }
     
     #about {
+        min-width: 200px;
         color: black;
         font-weight: bold;
         font-size: 16px;
@@ -120,7 +124,7 @@
 }
 
 .item-show-cart-container {
-    position: inline-block;
+    display: inline-block;
     min-width: 250px;
     min-height: 460px;
     border: 1px solid #ddd;
@@ -138,6 +142,68 @@
     .in-stock {
         color: #007600;
         font-size: 17px;
+        // padding-top: 25px;
+        position: absolute;
+        top: 280px;
+    }
+    .quantity-button {
+        top: 320px;
+        background: linear-gradient(to bottom,#e7eaf0,#d9dce1);
+        border-radius: 3px;
+        border-color: #ADB1B8 #A2A6AC #8D9096;
+        border-style: solid;
+        border-width: 1px;
+        font-size: 11px;
+        color: #111111;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        cursor: pointer;
+        box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
+        padding: 4px 6px;
+        position: absolute;
+    }
+    .quantity-button:hover{
+        border-color: #a2a6ac #979aa1 #82858a;
+        background: #adb1b886;
+    }
+    .add-to-cart {
+        border-radius: 3px;
+        width: 206px;
+        height: 30px;
+        padding: 3px 7px;
+        top: 375px;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 13px;
+        color: #111111;
+        position: absolute;
+        background-image: linear-gradient(to bottom, rgba(240, 193, 75, 0.3), rgba(240, 193, 75, 1));
+        border-color: #a88734 #9c7e31 #846a29;
+        border-width: thin;
+        cursor: pointer;
+        box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
+
+    }
+    .add-to-cart:hover {
+        background-image: linear-gradient(to bottom, rgba(248, 196, 66, 0.5), rgba(240, 193, 75, 1));
+    }
+    .buy-now {
+        border-radius: 3px;
+        width: 206px;
+        height: 30px;
+        padding: 3px 7px;
+        top: 417px;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 13px;
+        color: #111111;
+        position: absolute;
+        background-image: linear-gradient(to bottom,rgb(246, 200, 143),rgb(237, 146, 32));
+        border-color: #a88734 #9c7e31 #846a29;
+        border-width: thin;
+        cursor: pointer;
+        box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
+
+    }
+    .buy-now:hover {
+        background-image: linear-gradient(to bottom, rgba(214, 123, 12, 0.5), rgb(237, 146, 32));
     }
 }
 

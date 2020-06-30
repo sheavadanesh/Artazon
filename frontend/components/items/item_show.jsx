@@ -19,7 +19,6 @@ class ItemShow extends React.Component {
     render() {
         const { item } = this.props;
         if (item === undefined) return null;
-        console.log(item);
         return (
             <div className='item-show'>
                 <div className='item-img-container'>
@@ -27,12 +26,13 @@ class ItemShow extends React.Component {
 
                     </div>
                     <span className='item-img'>
-                        <img src={item.photoUrl}></img>
+                        <img className='item-photo'src={item.photoUrl}></img>
                     </span>
                 </div>
                 <div className='item-text-container'>
                     <div className='item-title-header'>
                         <h1 className='item-title'>{item.title}</h1>
+                        <span className='line-break-title'></span>
                     </div>
                     <span className='rating-preview'>
                         rating
@@ -49,11 +49,9 @@ class ItemShow extends React.Component {
                             <br></br>
                             <span id='description'>{item.description}</span>
                         </label>
-                    </div>
-                    <div className='show-col2'>
-                        <label className='item-show-col2'>Year:  <span>  {item.year}</span></label>
+                        {/* <label className='item-show-col2'>Year:  <span>  {item.year}</span></label>
                         <br></br>
-                        <label className='item-show-col2'>Type:  <span>  {item.media_type}</span></label>
+                        <label className='item-show-col2'>Type:  <span>  {item.media_type}</span></label> */}
                     </div>
                     <span className='line-break-about'></span>
                 </div>
@@ -64,13 +62,11 @@ class ItemShow extends React.Component {
                     <br></br>
                     <span className='in-stock'>In Stock.</span>
                     <br></br>
-                    <div className='quantity-dropdown'>
-
-                    </div>
+                    <button className='quantity-button'>Qty: 1</button>
                     <br></br>
-                    <button>Add to Cart</button>
+                    <button className='add-to-cart'>Add to Cart</button>
                     <br></br>
-                    <button>Buy Now</button>
+                    <button className='buy-now'>Buy Now</button>
                 </div>
                 <div className='customer-reviews'>
                     customer reviews go here

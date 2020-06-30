@@ -23,13 +23,11 @@
  .page {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     position: relative;
-    // min-height: 100vh;
  }
 
 .navbar {
     position: relative;
     font-size: 12px;
-    // min-width: 920px;
     height: 60px;
     background-color: #131A22;
     font-family: inherit;
@@ -38,7 +36,6 @@
     box-sizing: border-box;
     z-index: 3;
     display: flex;
-    // flex-direction: column;
 }
 
 .account-container {
