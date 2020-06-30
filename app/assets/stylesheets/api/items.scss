@@ -222,12 +222,50 @@
     bottom: 0;
     width: 100%;
     display: block;
-    padding: 10px;
+    padding: 15px;
     border-top: 1px solid #ddd;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 .review-heading {
     font-size: 22px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: inherit;
+    font-weight: bold;
     color: #111111;
+    display: block;
+    position: absolute;
+    margin-top: -3px;
+}
+.reviews-star-ratings {
+    font-size: 17px;
+    font-family: inherit;
+    color: #111111;
+    display: block;
+    position: absolute;
+    margin-top: 27px;
+}
+.total-ratings {
+    font-size: 13px;
+    color: #555555;
+    font-family: inherit;
+    position: absolute;
+    margin-top: 55px;
+}
+.ratings-table {
+    margin-top: 50px;
+    span {
+        font-family: inherit;
+        font-size: 13px;
+        color: #0066C0;
+    }
+}
+.write-review {
+    border-top: 1px solid #ddd;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-top: 78px;
+    .review-subtext {
 
+    }
 }

@@ -72,7 +72,24 @@ class ItemShow extends React.Component {
                     </div>
                 </div>
                 <footer className='customer-reviews'>
-                    <label className='review-heading'>Customer reviews</label>
+                    <div className='left-side'>
+                        <label className='review-heading'>Customer reviews</label>
+                        <span className='reviews-star-ratings'>rating</span>
+                        <span className='total-ratings'>Total customer ratings</span>
+                        <table className='ratings-table'>
+                            <span className='5-star'>5 star</span>
+                            <span className='4-star'>4 star</span>
+                            <span className='3-star'>3 star</span>
+                            <span className='2-star'>2 star</span>
+                            <span className='1-star'>1 star</span>
+                        </table>
+                        <h3 className='write-review'>Review this product
+                            <h4 className='review-subtext'>Share your thoughts with other customers</h4>
+                        </h3>
+                    </div>
+                    <div className='right-side'>
+
+                    </div>
                 </footer>
             </div>
         )
