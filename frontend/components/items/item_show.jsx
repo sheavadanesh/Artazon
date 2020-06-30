@@ -66,26 +66,27 @@ class ItemShow extends React.Component {
                         <br></br>
                         <button className='quantity-button'>Qty: 1</button>
                         <br></br>
-                        <button className='add-to-cart'><img className='cart-logo' src='/assets/cart-logo.png'></img> Add to Cart</button>
+                        <button className='add-to-cart'><img className='cart-logo' src='https://artazon-seeds.s3-us-west-1.amazonaws.com/cart-logo.png'></img> Add to Cart</button>
                         <br></br>
-                        <button className='buy-now'><img className='buy-now-logo' src='/assets/buy-now-logo.png'></img>Buy Now</button>
+                        <button className='buy-now'><img className='buy-now-logo' src='https://artazon-seeds.s3-us-west-1.amazonaws.com/buy-now-logo.png'></img>Buy Now</button>
                     </div>
                 </div>
                 <footer className='customer-reviews'>
                     <div className='left-side'>
                         <label className='review-heading'>Customer reviews</label>
-                        <span className='reviews-star-ratings'>rating</span>
+                        {/* <span className='reviews-star-ratings'>rating</span>
                         <span className='total-ratings'>Total customer ratings</span>
-                        <table className='ratings-table'>
+                        <div className='ratings-table'>
                             <span className='5-star'>5 star</span>
                             <span className='4-star'>4 star</span>
                             <span className='3-star'>3 star</span>
                             <span className='2-star'>2 star</span>
                             <span className='1-star'>1 star</span>
-                        </table>
-                        <h3 className='write-review'>Review this product
-                            <h4 className='review-subtext'>Share your thoughts with other customers</h4>
-                        </h3>
+                        </div>
+                        <div className='write-review'>Review this product
+                            <span className='review-subtext'>Share your thoughts with other customers</span>
+                            <button className='write-review-button'>Write a customer review</button>
+                        </div> */}
                     </div>
                     <div className='right-side'>
 
