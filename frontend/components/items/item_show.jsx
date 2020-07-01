@@ -32,29 +32,31 @@ class ItemShow extends React.Component {
                     <div className='item-text-container'>
                         <div className='item-title-header'>
                             <h1 className='item-title'>{item.title}</h1>
+                            <span className='rating-preview'>
+                                rating
+                            </span>
                             <span className='line-break-title'></span>
                         </div>
-                        <span className='rating-preview'>
-                            rating
-                        </span>
-                        <label className='price'>Price:  
-                            <span className='price-num'>  ${item.price}<span className='free-ship' id='mid-text'> & FREE Shipping.</span></span>
-                        </label>
-                        <div className='show-col1'>
-                            <label className='item-show-col1'>Artist:<span>  {item.artist}</span></label>
-                            <br></br>
-                            <label className='item-show-col1'>Year:<span>  {item.year}</span></label>
-                            <br></br>
-                            <label className='item-show-col1'> Style:<span>  {item.style}</span></label>
-                            <br></br>
-                            <label className='item-show-col1'>Type:<span>  {item.media_type}</span></label>
-                            <br></br>
-                            <label className='item-show-col1' id='about'>About this item
-                                <br></br>
-                                <span id='description'>{item.description}</span>
+                        <div className='item-properties'>
+                            <label className='price'>Price:  
+                                <span className='price-num'>  ${item.price}<span className='free-ship' id='mid-text'> & FREE Shipping.</span></span>
                             </label>
+                            <div className='show-col1'>
+                                <label className='item-show-col1'>Artist:<span>  {item.artist}</span></label>
+                                <br></br>
+                                <label className='item-show-col1'>Year:<span>  {item.year}</span></label>
+                                <br></br>
+                                <label className='item-show-col1'> Style:<span>  {item.style}</span></label>
+                                <br></br>
+                                <label className='item-show-col1'>Type:<span>  {item.media_type}</span></label>
+                                <br></br>
+                                <label className='item-show-col1' id='about'>About this item
+                                    <br></br>
+                                    <span id='description'>{item.description}</span>
+                                </label>
+                            </div>
+                            <span className='line-break-about'></span>
                         </div>
-                        <span className='line-break-about'></span>
                     </div>
                     <div className='item-show-cart-container'>
                         <span className='price-num' id='side-cont'>${item.price}</span>
@@ -76,16 +78,16 @@ class ItemShow extends React.Component {
                         {/* <span className='reviews-star-ratings'>rating</span>
                         <span className='total-ratings'>Total customer ratings</span>
                         <div className='ratings-table'>
-                            <span className='5-star'>5 star</span>
-                            <span className='4-star'>4 star</span>
-                            <span className='3-star'>3 star</span>
-                            <span className='2-star'>2 star</span>
-                            <span className='1-star'>1 star</span>
+                        <span className='5-star'>5 star</span>
+                        <span className='4-star'>4 star</span>
+                        <span className='3-star'>3 star</span>
+                        <span className='2-star'>2 star</span>
+                        <span className='1-star'>1 star</span>
                         </div>
                         <div className='write-review'>Review this product
-                            <span className='review-subtext'>Share your thoughts with other customers</span>
-                            <button className='write-review-button'>Write a customer review</button>
-                        </div> */}
+                        <span className='review-subtext'>Share your thoughts with other customers</span>
+                        <button className='write-review-button'>Write a customer review</button>
+                    </div> */}
                     </div>
                     <div className='right-side'>
 

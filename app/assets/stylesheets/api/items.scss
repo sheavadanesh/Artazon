@@ -40,26 +40,40 @@
     .item-title-header {
         position: absolute;
         max-width: 250px;
-        line-height: 23px;
+        line-height: 24px;
+        // border: 1px solid lightgreen;
         .item-title {
             font-size: 22px;
             font-weight: normal;
             margin-top: 0px;
-            padding-top: 20px;
+            padding-top: 10px;
+            // border: 1px solid pink;
+            margin: auto;
         }
         .line-break-title {
         background-color: transparent;
         border-top: 1px solid #e7e7e7;
         top: 85px;
         width: 250px;
+        }
     }
+    .item-properties {
+        // border: 1px solid yellow;
+        // border-top: 1px solid #e7e7e7;
+
+        display: block;
+        position: relative;
     }
     .rating-preview {
-        padding-top: 60px;
+        // padding-top: 60px;
         font-size: 13px;
         color: #0066C0;
-        line-height: 10px;
+        line-height: 20px;
         font-weight: normal;
+        // border: 1px solid red;
+        position: absolute;
+        display: block;
+        margin-top: 4px;
     }
     .show-col1 {
         min-width: 300px;
