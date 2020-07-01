@@ -18,6 +18,7 @@ class ItemShow extends React.Component {
     render() {
         const { item } = this.props;
         if (item === undefined) return null;
+        let updatedPrice = (Math.round(item.price * 100)/100).toFixed(2);
         return (
             <div className='show'>
                 <div className='item-show'>
@@ -39,7 +40,7 @@ class ItemShow extends React.Component {
                         </div>
                         <div className='item-properties'>
                             <label className='price'>Price:  
-                                <span className='price-num'>  ${item.price}<span className='free-ship' id='mid-text'> & FREE Shipping.</span></span>
+                                <span className='price-num'>  ${updatedPrice}<span className='free-ship' id='mid-text'> & FREE Shipping.</span></span>
                             </label>
                             <div className='show-col1'>
                                 <label className='item-show-col1'>Artist:<span>  {item.artist}</span></label>
@@ -59,7 +60,7 @@ class ItemShow extends React.Component {
                         </div>
                     </div>
                     <div className='item-show-cart-container'>
-                        <span className='price-num' id='side-cont'>${item.price}</span>
+                        <span className='price-num' id='side-cont'>${updatedPrice}</span>
                         <br></br>
                         <span className='free-ship' id='cart-text'> & FREE Shipping.</span>
                         <br></br>

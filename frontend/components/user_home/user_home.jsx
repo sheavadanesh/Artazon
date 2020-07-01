@@ -1,12 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 const UserHome = props => {
-
+    
     const loggedInGreeting = () => (
         <div className='page'>
+        <Redirect to='/items/'/>
             <div className='navbar'>
-                <Link to='/'>
+                {/* <Link to='/'> */}
+                <Link to='/items/'>
                     <div className='nav-logo'>
                         <div id='artazon-logo' />
                     </div>
@@ -32,8 +34,10 @@ const UserHome = props => {
 
     const loggedOutGreeting = () => (
         <div className='page'>
+        <Redirect to='/items/' />
             <div className='navbar'>
-                <Link to='/'>
+                {/* <Link to='/'> */}
+                <Link to='/items/'>
                     <div className='nav-logo'>
                         <div id='artazon-logo' />
                     </div>
@@ -67,4 +71,3 @@ const UserHome = props => {
 export default UserHome;
 // if you only have a render, it can be a functional component (const)
 // class component can be used if you have more in there than just a render
-// props (needed info) are objects that are passed down to the component from container or directly passed in form of shirt={shirt}

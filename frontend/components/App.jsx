@@ -4,7 +4,7 @@ import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
 import ItemShowContainer from './items/item_show_container';
 import ItemIndexContainer from './items/item_index_container';
-import { Link, Switch, Route } from 'react-router-dom';
+import { Link, Switch, Route, Redirect } from 'react-router-dom';
 
 const App = () => (
     <div className='app'>

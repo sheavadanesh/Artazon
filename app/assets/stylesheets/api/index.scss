@@ -59,7 +59,10 @@
     .by {
         color: #111111;
     }
-    .index-item-price {
+    .price-shennanigans {
+        display: block;
+        justify-content: left;
+        width: 300px;
         text-decoration: none;
         font-size: 21px;
         display: block;
@@ -69,6 +72,11 @@
     .dollar-sign {
         font-size: 12px;
         float: left;
+    }
+    .mini-deci {
+        font-size: 12px;
+        // display: flex;
+        // float: left;
     }
     .free-ship-cap {
         font-size: 12px;
