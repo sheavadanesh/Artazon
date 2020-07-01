@@ -25,7 +25,7 @@ const App = () => (
             <div className='bottom-footer'>
                 <div className='get-to-know'>Get to Know the Creator
                 <a className='linkedin'href='https://www.linkedin.com/in/sheava-danesh-088818137/'>
-                    <li id='first'>Sheava's LinkedIn</li>
+                    <li id='first'>Sheava Danesh | LinkedIn</li>
                 </a>
                 </div>
                 <div className='footer-logo'>
