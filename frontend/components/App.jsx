@@ -28,7 +28,7 @@ const App = () => (
                 </div>
             </div>
             <div className='super-bottom-footer'>
-                <Link to='/'>
+                <Link to='/items/'>
                     <div className='footer-logo'>
                         <div id='artazon-footer-logo' />
                     </div>
