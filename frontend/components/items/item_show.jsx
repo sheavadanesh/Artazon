@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 
 class ItemShow extends React.Component {
     constructor(props) {
