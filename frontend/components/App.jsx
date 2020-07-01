@@ -24,8 +24,9 @@ const App = () => (
             </div>
             <div className='bottom-footer'>
                 <div className='get-to-know'>Get to Know the Creator
-                {/* <Link to='' */}
+                <a className='linkedin'href='https://www.linkedin.com/in/sheava-danesh-088818137/'>
                     <li id='first'>Sheava's LinkedIn</li>
+                </a>
                 </div>
                 <div className='footer-logo'>
 

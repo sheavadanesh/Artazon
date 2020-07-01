@@ -1,17 +1,4 @@
 class Item < ApplicationRecord
-    # ARTISTS = [
-    #     'Salvador Dali',
-    #     'Pablo Picasso',
-    #     'Leonardo Da Vinci',
-    #     'Andy Warhol',
-    #     'Claude Monet',
-    #     'Rembrandt van Rijn',
-    #     'Vincent Van Gogh',
-    #     'Frida Kahlo',
-    #     "Georgia O'Keeffe",
-    #     'Jackson Pollock',
-    #     'Other'
-    # ]
 
     TYPES = [
         'Painting',
@@ -32,8 +19,8 @@ class Item < ApplicationRecord
     ]
 
     validates :artist, presence: true
-    validates :media_type, presence: true, inclusion: { in: TYPES }
-    validates :style, presence: true, inclusion: { in: STYLES }
+    validates :media_type, presence: true
+    validates :style, presence: true
     validates :title, :year, :description, :price, presence: true
 
     has_one_attached :photo

@@ -43,6 +43,13 @@
     }
     #first {
         padding: 15px 5px 5px 9px;
-        text-align: left;
+        text-align: center;
+    }
+    #first:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .linkedin {
+        text-decoration: none;
     }
 }

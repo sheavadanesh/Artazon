@@ -1,12 +1,24 @@
 .item-index {
     display: flex;
     padding: 90px 10px 20px 10px;
+    min-height: 500px;
+}
+.all-items-head {
+    font-size: 21px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #111111;
+    display: block;
+    width: 200px;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 55px;
 }
 
 .item-index-item {
+    float: left;
     border-bottom: 2px solid #ccc;
     width: 250px;
-    height: 320px;
+    height: 340px;
     list-style-type: none;
     display: flex;
     text-align: left;
@@ -14,14 +26,20 @@
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: #111111;
     cursor: pointer;
-    // padding: 10px;
+    margin: 20px 15px 5px 15px; 
     .item-body {
         text-decoration: none;
         color: #111111;
     }
-    .index-item-photo {
-        max-width: 250px;
-        max-height: 300px;
+    .photo-cont {
+        display: block;
+        text-align: center;
+        width: 250px;
+        .index-item-photo {
+            max-width: 250px;
+            max-height: 200px;
+            justify-content: center;
+        }
     }
     .index-item-title {
         text-decoration: none;

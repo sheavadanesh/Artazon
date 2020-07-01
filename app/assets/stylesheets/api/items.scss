@@ -91,8 +91,9 @@
     #description {
         font-weight: normal;
         font-size: 13px;
-        line-height: 5px;
-        margin-top: -10px;
+        line-height: 19px;
+        margin-top: -17px;
+        max-width: 250px;
     }
 }
 .price {
@@ -223,6 +224,7 @@
     width: 100%;
     display: block;
     padding: 15px;
+    margin-top: 35px;
     border-top: 1px solid #ddd;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
