@@ -2,7 +2,7 @@
     bottom: 0;
     width: 100%;
     height: 250px;
-    background-color: #121b22;
+    background-color: #242f3e;
     display: block;
 }
 
@@ -44,12 +44,36 @@
     #first {
         padding: 15px 5px 5px 9px;
         text-align: center;
-    }
-    #first:hover {
-        text-decoration: underline;
-        cursor: pointer;
+        font-family: inherit;
     }
     .linkedin {
         text-decoration: none;
+        color: #dddddd;
+        font-family: inherit;
+    }
+    .linkedin:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+.super-bottom-footer {
+    // background-color: #121b22;
+    background-color: #242f3e;
+    border-top: 1px solid #3a4553;
+    position: 0;
+    bottom: 0;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    .footer-logo {
+        z-index: 4;
+    }
+    #artazon-footer-logo {
+        height: 30px;
+        width: 85px;
+        background-image: image_url('artazon_logo.png');
+        background-size: contain;
+        background-repeat: none;
+        margin-top: 30px;
     }
 }

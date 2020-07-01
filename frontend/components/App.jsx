@@ -24,13 +24,15 @@ const App = () => (
             </div>
             <div className='bottom-footer'>
                 <div className='get-to-know'>Get to Know the Creator
-                <a className='linkedin'href='https://www.linkedin.com/in/sheava-danesh-088818137/'>
-                    <li id='first'>Sheava Danesh | LinkedIn</li>
-                </a>
+                    <li id='first'>Sheava Danesh  |  <a className='linkedin' href='https://www.linkedin.com/in/sheava-danesh-088818137/'>LinkedIn</a></li>
                 </div>
-                <div className='footer-logo'>
-
-                </div>
+            </div>
+            <div className='super-bottom-footer'>
+                <Link to='/'>
+                    <div className='footer-logo'>
+                        <div id='artazon-footer-logo' />
+                    </div>
+                </Link>
             </div>
         </footer>
     </div>
