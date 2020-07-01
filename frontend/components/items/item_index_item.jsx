@@ -13,7 +13,8 @@ const ItemIndexItem = ({ item }) => {
                 <span className='index-item-title'>{item.title}</span>
                 <span className='index-item-artist'><span className='by'>by </span> {item.artist}</span>
                 <div className='price-shennanigans'>
-                    <span className='index-item-price'><span className='dollar-sign'>$</span>{formattedPrice.slice(0, -2)}</span>
+                    <span className='dollar-sign'>$</span>
+                    <span className='index-item-price'>{formattedPrice.slice(0, -2)}</span>
                     <span className='mini-deci'>{updatedPrice.slice(-2)}</span>
                 </div>
                 <span className='free-ship-cap'>FREE Shipping by Artazon</span>

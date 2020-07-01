@@ -69,14 +69,20 @@
         margin: 15px 0px 5px 0px;
         line-height: 23px;
     }
+    .index-item-price {
+        vertical-align: top;
+    }
     .dollar-sign {
-        font-size: 12px;
-        float: left;
+        font-size: 13px;
+        // vertical-align: top;
+        position: relative;
+        top: -5px;    
     }
     .mini-deci {
-        font-size: 12px;
-        // display: flex;
-        // float: left;
+        font-size: 13px;
+        // vertical-align: top;
+        position: relative;
+        top: -6px;
     }
     .free-ship-cap {
         font-size: 12px;
