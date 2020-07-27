@@ -120,8 +120,8 @@ i21.photo.attach(io: file, filename: 'reve.jpg')
 i21.save!
 
 i22 = Item.new(title: "Girl before a Mirror", artist: "Pablo Picasso", year: 1932, description: "Girl before a Mirror is a painting by Pablo Picasso that was created in March 1932. Considered to be one of his masterpieces, the painting has elicited varied interpretations of this portrait of Picasso's lover and her reflection.", style: 'Cubism', media_type: 'Painting', price: 45.99)
-file = open('https://artazon-seeds.s3-us-west-1.amazonaws.com/Le+Reve.jpg')
-i22.photo.attach(io: file, filename: 'reve.jpg')
+file = open('https://artazon-seeds.s3-us-west-1.amazonaws.com/girl-before-a-mirror.jpg')
+i22.photo.attach(io: file, filename: 'girl_before_mirror.jpg')
 i22.save!
 
 i23 = Item.new(title: "Don Quixote", artist: "Pablo Picasso", year: 1955, description: "Don Quixote is a 1955 sketch by Pablo Picasso of the Spanish literary hero and his sidekick, Sancho Panza. It was featured on the August 18–24 issue of the French weekly journal Les Lettres Françaises in celebration of the 350th anniversary of the first part of Cervantes’s Don Quixote. ", style: 'Cubism', media_type: 'Sketch', price: 10.99)
