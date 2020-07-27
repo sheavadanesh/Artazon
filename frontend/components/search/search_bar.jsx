@@ -14,14 +14,14 @@ class SearchBar extends React.Component {
         this.handleItemClick = this.handleItemClick.bind(this);
     }
 
-    handleItemClick(title) {
+    handleItemClick(item) {
         return (e) => {
             e.preventDefault();
             this.props.navItemClicked(true);
             this.props.navDropdown(false);
             this.props.searchDropdownHide(true);
 
-            this.props.fetchItem(title).then(() => (this.props.history.push(`/items?${title.split(' ').join('-')}`)))
+            this.props.fetchItem(item).then(() => (this.props.history.push(`/items?${item.title.split(' ').join('-')}`)))
         }
     }
 
