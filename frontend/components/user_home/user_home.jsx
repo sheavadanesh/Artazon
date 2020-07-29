@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
+import SearchBar from '../search/search_bar';
 
 const UserHome = props => {
     
@@ -13,6 +14,9 @@ const UserHome = props => {
                         <div id='artazon-logo' />
                     </div>
                 </Link>
+                <div className='nav-searchbar'>
+                    <SearchBar/>
+                </div>
                 <div className='account-dropdown-container'>
                     <div className='account-dropdown'>
                         <button className='account-container'>
@@ -42,6 +46,9 @@ const UserHome = props => {
                         <div id='artazon-logo' />
                     </div>
                 </Link>
+                <div className='nav-searchbar'>
+                    <SearchBar />
+                </div>
                 <div className='account-dropdown-container'>
                     <div className='account-dropdown'>
                         <Link to='/login'>

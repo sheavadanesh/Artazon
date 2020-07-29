@@ -7,11 +7,18 @@ class SearchBar extends React.Component {
 
         this.state = {
             searchTerm: ''
+
         }
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleInput = this.handleInput.bind(this);
         this.handleItemClick = this.handleItemClick.bind(this);
+    }
+
+    componentDidMount() {
+        if (this.props.history.location.pathname === '/') {
+            this.setState({searchTerm: ''});
+        }
     }
 
     handleItemClick(item) {
@@ -64,8 +71,8 @@ class SearchBar extends React.Component {
 
     render() {
         let partialMatches = [];
-
-        partialMatches = this.props.titles.filter((obj) => (
+        
+        partialMatches = this.props.items.filter((obj) => (
             (obj.title.toUpperCase().slice(0, this.state.searchTerm.length) === this.state.searchTerm.toUpperCase())
         )).slice(0, 11).map(({ title }) => (
             <li className='partial-match' key={`${title}key`} onClick={this.handleItemClick(title)}>
