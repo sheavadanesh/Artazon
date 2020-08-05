@@ -6,13 +6,14 @@ const itemsReducer = (oldState = {}, action) => {
 
     switch (action.type) {
         case RECEIVE_ALL_ITEMS:
+            debugger
             return action.items;
         case RECEIVE_ITEM:
             nextState[action.item.id] = action.item;
             return nextState;
         case RECEIVE_SEARCH_RESULTS:
-            nextState.results = null;
-            return Object.assign({}, newState, { results: action.results.items })
+            debugger
+            return action.items;
 
         default:
             return oldState;

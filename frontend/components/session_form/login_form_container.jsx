@@ -4,13 +4,13 @@ import SessionForm from './session_form';
 import { login, clearErrors } from '../../actions/session_actions';
 import { Link } from 'react-router-dom';
 
-const mapStateToProps = (state, ownProps) => ({
+const mapStateToProps = (state) => ({
     errors: state.errors.session,
     formType: 'login',
     navLink: <Link to="/signup">Create your Artazon account</Link>
 });
 
-const mapDispatchToProps = (dispatch, ownProps) => ({
+const mapDispatchToProps = (dispatch) => ({
     processForm: (user) => dispatch(login(user)),
     dispatchedClearErrors: () => dispatch(clearErrors())
 });

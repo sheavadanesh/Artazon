@@ -26,4 +26,13 @@ class Item < ApplicationRecord
     has_one_attached :photo
     
     has_many :reviews, class_name: "Review", foreign_key: :item_id
+
+    # Active Storage Association
+
+    def self.search(keyword)
+        self.where("title ILIKE ?", "%#{keyword}%")
+        .or(self.where("style ILIKE ?", "%#{keyword}%"))
+        .or(self.where("media_type ILIKE ?", "%#{keyword}%"))
+        .or(self.where("artist ILIKE ?", "%#{keyword}%"))
+    end
 end
