@@ -1,4 +1,4 @@
-import { RECEIVE_ALL_ITEMS, RECEIVE_ITEM, RECEIVE_SEARCH_RESULTS } from '../actions/item_actions';
+import { RECEIVE_ALL_ITEMS, RECEIVE_ITEM } from '../actions/item_actions';
 
 const itemsReducer = (oldState = {}, action) => {
     Object.freeze(oldState);
@@ -11,9 +11,9 @@ const itemsReducer = (oldState = {}, action) => {
         case RECEIVE_ITEM:
             nextState[action.item.id] = action.item;
             return nextState;
-        case RECEIVE_SEARCH_RESULTS:
-            // debugger
-            return action.items;
+        // case RECEIVE_SEARCH_RESULTS:
+        //     // debugger
+        //     return action.items;
 
         default:
             return oldState;

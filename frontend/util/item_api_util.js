@@ -18,19 +18,19 @@ export const fetchItem = (itemId) => (
     })
 )
 
-export const searchItem = (keyword) => (
-    $.ajax({
-        url: '/api/items/search',
-        method: 'GET',
-        data: {
-            // search: {
-            //     title: searchParams.title,
-            //     artist: searchParams.artist,
-            //     year: searchParams.year,
-            //     style: searchParams.style,
-            //     type: searchParams.type
-            // }
-            keyword
-        }
-    })
-)
+// export const searchItem = (keyword) => (
+//     $.ajax({
+//         url: '/api/items/search',
+//         method: 'GET',
+//         data: {
+//             // search: {
+//             //     title: searchParams.title,
+//             //     artist: searchParams.artist,
+//             //     year: searchParams.year,
+//             //     style: searchParams.style,
+//             //     type: searchParams.type
+//             // }
+//             keyword
+//         }
+//     })
+// )
