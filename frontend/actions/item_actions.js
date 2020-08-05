@@ -5,7 +5,7 @@ export const RECEIVE_ITEM = 'RECEIVE_ITEM';
 export const RECEIVE_SEARCH_RESULTS = 'RECEIVE_SEARCH_RESULTS';
 
 const receiveItems = (items) => {
-    debugger
+    // debugger
     return {
         type: RECEIVE_ALL_ITEMS,
         items
@@ -18,7 +18,7 @@ const receiveItem = (item) => ({
 });
 
 const receiveSearchResults = (items) => {
-    debugger
+    // debugger
     return {
         type: RECEIVE_SEARCH_RESULTS,
         items
@@ -26,7 +26,7 @@ const receiveSearchResults = (items) => {
 };
 
 export const fetchItems = (data) => dispatch => {
-    debugger
+    // debugger
     return (
         ItemAPIUtil.fetchItems(data).then(items => dispatch(receiveItems(items)))
     )

@@ -2,7 +2,7 @@ class Api::ItemsController < ApplicationController
 
     def index 
         @items = keyword ? Item.search(keyword) : Item.all
-        debugger
+        # debugger
         render :index
     end
 
@@ -19,7 +19,7 @@ class Api::ItemsController < ApplicationController
     private
 
     def keyword
-        debugger
+        # debugger
         params[:keyword]
     end
     

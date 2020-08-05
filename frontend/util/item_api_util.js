@@ -1,6 +1,6 @@
 
 export const fetchItems = (searchTerm) => {
-    debugger
+    // debugger
     return (
         $.ajax({
             url: '/api/items',

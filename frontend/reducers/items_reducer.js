@@ -6,13 +6,13 @@ const itemsReducer = (oldState = {}, action) => {
 
     switch (action.type) {
         case RECEIVE_ALL_ITEMS:
-            debugger
+            // debugger
             return action.items;
         case RECEIVE_ITEM:
             nextState[action.item.id] = action.item;
             return nextState;
         case RECEIVE_SEARCH_RESULTS:
-            debugger
+            // debugger
             return action.items;
 
         default:
