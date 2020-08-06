@@ -3,21 +3,22 @@
     display: flex;
     min-width: 335px;
     justify-content: center;
-    text-align: center;
     border-radius: 4px;
     margin: auto;
     box-sizing: border-box;
     margin-top: 9px;
-    width: 400px;
+    // width: 1000px;
+    width: auto;
 }
 
 .search-form-box-inner {
     height: 40px;
-    width: 100%;
     position: relative;
     display: flex;
     border: none;
     background: none;
+    // width: 100%;
+    width: auto;
 }
 .search-form-box-inner:focus {
     outline: 3px solid red;
@@ -26,11 +27,11 @@
 .search-input {
     height: 38px;
     border: none;
-    min-width: 400px;
-    width: 100%;
     border-radius: 4px 0px 0px 4px;
     font-size: 15.5px;
     padding-left: 8px;
+    flex: 2;
+    width: 400px;
 }
 
 .search-input:focus {

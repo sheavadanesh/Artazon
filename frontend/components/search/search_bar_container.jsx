@@ -11,7 +11,7 @@ const mapStateToProps = state => {
 
 const mapDisptachToProps = dispatch => {
     return {
-        fetchItems: (data) => dispatch(fetchItems(data)),
+        fetchItems: (data) => dispatch(fetchItems(data))
         // searchItem: (keyword) => dispatch(searchItem(keyword))
     }
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import SearchBarContainer from '../search/search_bar_container';
+import ShoppingCartContainer from '../cart/shopping_cart_container';
 
 const UserHome = props => {
     
@@ -28,6 +29,9 @@ const UserHome = props => {
                             <button className='alt-link' id='sign-out-dropdown' type='submit' onClick={props.logout}>Sign Out</button>
                         </div>
                     </div>
+                </div>
+                <div className='nav-cart'>
+                    <ShoppingCartContainer />
                 </div>
             </div>
             <div className='sub-navbar'>
@@ -66,6 +70,9 @@ const UserHome = props => {
                         </div>
                     </div>
                 </div> 
+                <div className='nav-cart'>
+                    <ShoppingCartContainer />
+                </div>
             </div>
             <div className='sub-navbar'>
                 <p> </p>
