@@ -13,7 +13,6 @@ class SearchBar extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        // debugger
         this.props.fetchItems(this.state.keyword);
     }
 
