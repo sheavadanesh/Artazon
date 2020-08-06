@@ -26,14 +26,14 @@ class SearchBar extends React.Component {
             <div className='search-form-container'>
 
                 <form onSubmit={this.handleSubmit} className='search-form-box'>
-                    <div className='search-form-box-inner'>
+                    <button className='search-form-box-inner'>
                         <input type='text'
                             value={this.state.keyword}
                             onChange={this.update('keyword')}
                             className='search-input'
                             />
                         <button className='submit-search' type='submit'><i className="fas fa-search"></i></button>
-                    </div>
+                    </button>
                 </form>
             </div>
         )
