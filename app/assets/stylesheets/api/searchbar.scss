@@ -8,6 +8,7 @@
     margin: auto;
     box-sizing: border-box;
     margin-top: 9px;
+    width: 400px;
 }
 
 .search-form-box-inner {
@@ -25,7 +26,8 @@
 .search-input {
     height: 38px;
     border: none;
-    min-width: 290px;
+    min-width: 400px;
+    width: 100%;
     border-radius: 4px 0px 0px 4px;
     font-size: 15.5px;
     padding-left: 8px;
