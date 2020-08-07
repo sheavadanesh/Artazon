@@ -31,7 +31,8 @@ const UserHome = props => {
                     </div>
                 </div>
                 <div className='nav-cart'>
-                    <ShoppingCartContainer />
+                    {/* <ShoppingCartContainer /> */}
+                    <button className='nav-cart-button'><i className="fas fa-shopping-cart" id='cart'></i> Cart</button>
                 </div>
             </div>
             <div className='sub-navbar'>
@@ -71,7 +72,8 @@ const UserHome = props => {
                     </div>
                 </div> 
                 <div className='nav-cart'>
-                    <ShoppingCartContainer />
+                    {/* <ShoppingCartContainer /> */}
+                    <button className='nav-cart-button'><i className="fas fa-shopping-cart" id='cart'></i> Cart</button>
                 </div>
             </div>
             <div className='sub-navbar'>

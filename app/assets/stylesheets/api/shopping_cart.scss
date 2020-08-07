@@ -1,0 +1,23 @@
+.nav-cart-button {
+    background: none;
+    border: none;
+    color: white;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: bolder;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    padding: 12px 10px 10px 10px;
+
+}
+.nav-cart-button:focus {
+    border: 1px solid white;
+    outline: none;
+}
+.nav-cart-button:hover {
+    border: 1px solid white;
+}
+
+.fas#cart, .fa-shopping-cart#cart {
+    color: white;
+    font-size: 27px;
+}
