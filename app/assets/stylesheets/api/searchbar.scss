@@ -1,6 +1,7 @@
 .search-form-container {
     height: 40px;
-    display: flex;
+    display: block;
+    position: absolute;
     min-width: 335px;
     justify-content: center;
     border-radius: 4px;
@@ -9,6 +10,7 @@
     margin-top: 9px;
     // width: 1000px;
     width: auto;
+    left: 160px;
 }
 
 .search-form-box-inner {
@@ -31,7 +33,7 @@
     font-size: 15.5px;
     padding-left: 8px;
     flex: 2;
-    width: 400px;
+    width: 300px;
 }
 
 .search-input:focus {

@@ -51,6 +51,7 @@ const UserHome = props => {
                         <div id='artazon-logo' />
                     </div>
                 </Link>
+                <div>
                 <div className='nav-searchbar'>
                     <SearchBarContainer />
                 </div>
@@ -73,7 +74,9 @@ const UserHome = props => {
                 </div> 
                 <div className='nav-cart'>
                     {/* <ShoppingCartContainer /> */}
+                    {/* <ShoppingCartContainer /> */}
                     <button className='nav-cart-button'><i className="fas fa-shopping-cart" id='cart'></i> Cart</button>
+                </div>
                 </div>
             </div>
             <div className='sub-navbar'>
