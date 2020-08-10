@@ -51,32 +51,32 @@ const UserHome = props => {
                         <div id='artazon-logo' />
                     </div>
                 </Link>
-                <div>
-                <div className='nav-searchbar'>
-                    <SearchBarContainer />
-                </div>
-                <div className='account-dropdown-container'>
-                    <div className='account-dropdown'>
-                        <Link to='/login'>
-                            <button className='account-container'>
-                                <span className='nav-line-1'>Hello, Sign in</span>
-                                <br></br>
-                                <span className='nav-line-2'>Account & Lists ▾</span>
-                            </button>
-                        </Link>
-                        <div className='account-dropdown-content'>
-                            <Link to='/login'>
-                                <input className='submit-button' id='dropdown-yellow' type="submit" value="Sign in" />
-                            </Link>
-                            <span className='alt-link' id='new-customer-dropdown'>New customer? <Link to='/signup' id='start-here-link'>Start here.</Link></span>
-                        </div>
+                <div className='left-nav-section'>
+                    <div className='nav-searchbar'>
+                        <SearchBarContainer />
                     </div>
-                </div> 
-                <div className='nav-cart'>
-                    {/* <ShoppingCartContainer /> */}
-                    {/* <ShoppingCartContainer /> */}
-                    <button className='nav-cart-button'><i className="fas fa-shopping-cart" id='cart'></i> Cart</button>
-                </div>
+                    <div className='account-dropdown-container'>
+                        <div className='account-dropdown'>
+                            <Link to='/login'>
+                                <button className='account-container'>
+                                    <span className='nav-line-1'>Hello, Sign in</span>
+                                    <br></br>
+                                    <span className='nav-line-2'>Account & Lists ▾</span>
+                                </button>
+                            </Link>
+                            <div className='account-dropdown-content'>
+                                <Link to='/login'>
+                                    <input className='submit-button' id='dropdown-yellow' type="submit" value="Sign in" />
+                                </Link>
+                                <span className='alt-link' id='new-customer-dropdown'>New customer? <Link to='/signup' id='start-here-link'>Start here.</Link></span>
+                            </div>
+                        </div>
+                    </div> 
+                    <div className='nav-cart'>
+                        {/* <ShoppingCartContainer /> */}
+                        {/* <ShoppingCartContainer /> */}
+                        <button className='nav-cart-button'><i className="fas fa-shopping-cart" id='cart'></i> Cart</button>
+                    </div>
                 </div>
             </div>
             <div className='sub-navbar'>
