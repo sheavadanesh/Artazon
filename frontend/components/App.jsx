@@ -5,6 +5,7 @@ import SignupFormContainer from './session_form/signup_form_container';
 import ItemShowContainer from './items/item_show_container';
 import ItemIndexContainer from './items/item_index_container';
 import { Link, Switch, Route, Redirect } from 'react-router-dom';
+import ShoppingCartContainer from './cart/shopping_cart_container';
 
 const App = () => (
     <div className='app'>
@@ -14,6 +15,7 @@ const App = () => (
             <Route path='/signup' component={SignupFormContainer} />
             <Route path='/items/:itemId' component={ItemShowContainer} />
             <Route path='/items' component={ItemIndexContainer} />
+            <Route path='/cart' component={ShoppingCartContainer} />
             {/* may cause problems because this is not redirecting */}
             {/* write any other routes about the / route and inside
             of this switch tag */}

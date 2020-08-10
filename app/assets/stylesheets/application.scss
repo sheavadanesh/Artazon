@@ -48,11 +48,14 @@
     background-color: inherit;
     text-align: left;
     border: 1px solid transparent;
+    text-decoration: underline;
+    text-decoration-color: transparent;
 }
 .account-container:hover, .account-container:focus {
     outline: none;
     border: 1px solid white;
     border-radius: 3px;
+    text-decoration: none;
 }
 
 .nav-line-1 {
@@ -61,7 +64,6 @@
     font-family: inherit;
     letter-spacing: inherit;
     background-color: inherit;
-    // border: inherit;
 }
 
 .nav-line-2 {
@@ -70,7 +72,6 @@
     font-weight: bold;
     font-family: inherit;
     background-color: inherit;
-    // border: inherit;
 }
 
 .sub-navbar {
@@ -97,7 +98,6 @@
     background-image: image_url('artazon_logo.png');
     background-size: contain;
     background-repeat: none;
-
 }
 
 .account-dropdown {
@@ -144,7 +144,6 @@
     position: absolute;
     right: 25px;
     background-color: white;
-    // cursor: pointer;
 }
 
 #new-customer-dropdown {

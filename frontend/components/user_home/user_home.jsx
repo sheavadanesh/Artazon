@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import SearchBarContainer from '../search/search_bar_container';
 import ShoppingCartContainer from '../cart/shopping_cart_container';
 
@@ -31,7 +32,6 @@ const UserHome = props => {
                     </div>
                 </div>
                 <div className='nav-cart'>
-                    {/* <ShoppingCartContainer /> */}
                     <button className='nav-cart-button'><i className="fas fa-shopping-cart" id='cart'></i> Cart</button>
                 </div>
             </div>
@@ -72,9 +72,7 @@ const UserHome = props => {
                             </div>
                         </div>
                     </div> 
-                    <div className='nav-cart'>
-                        {/* <ShoppingCartContainer /> */}
-                        {/* <ShoppingCartContainer /> */}
+                    <div className='nav-cart'>                        
                         <button className='nav-cart-button'><i className="fas fa-shopping-cart" id='cart'></i> Cart</button>
                     </div>
                 </div>
@@ -87,6 +85,4 @@ const UserHome = props => {
     return props.currentUser ? loggedInGreeting() : loggedOutGreeting();
 };
 
-export default UserHome;
-// if you only have a render, it can be a functional component (const)
-// class component can be used if you have more in there than just a render
+export default withRouter(UserHome);

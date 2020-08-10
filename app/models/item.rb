@@ -26,6 +26,7 @@ class Item < ApplicationRecord
     has_one_attached :photo
     
     has_many :reviews, class_name: "Review", foreign_key: :item_id
+    has_many :cart_items, class_name: "CartItems", foreign_key: :item_id
 
     # Active Storage Association
 
