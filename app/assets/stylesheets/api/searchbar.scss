@@ -1,11 +1,10 @@
 .left-nav-section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .search-form-container {
     height: 40px;
-    display: block;
     position: absolute;
     min-width: 335px;
     justify-content: center;
@@ -13,8 +12,7 @@
     margin: auto;
     box-sizing: border-box;
     margin-top: 9px;
-    // width: 1000px;
-    width: auto;
+    width: 53%;
     left: 160px;
 }
 
@@ -24,11 +22,7 @@
     display: flex;
     border: none;
     background: none;
-    // width: 100%;
     width: auto;
-}
-.search-form-box-inner:focus {
-    outline: 3px solid red;
 }
 
 .search-input {
