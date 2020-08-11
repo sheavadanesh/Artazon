@@ -16,23 +16,25 @@ const UserHome = props => {
                         <div id='artazon-logo' />
                     </div>
                 </Link>
-                <div className='nav-searchbar'>
-                    <SearchBarContainer/>
-                </div>
-                <div className='account-dropdown-container'>
-                    <div className='account-dropdown'>
-                        <button className='account-container'>
-                            <span className='nav-line-1' id='hello-user'>Hello, {props.currentUser.name.split(" ")[0]}</span>
-                            <br></br>
-                            <span className='nav-line-2'>Account & Lists ▾</span>
-                        </button>
-                        <div className='account-dropdown-content'>
-                            <button className='alt-link' id='sign-out-dropdown' type='submit' onClick={props.logout}>Sign Out</button>
+                <div className='left-nav-section'>
+                    <div className='nav-searchbar'>
+                        <SearchBarContainer/>
+                    </div>
+                    <div className='account-dropdown-container'>
+                        <div className='account-dropdown'>
+                            <button className='account-container'>
+                                <span className='nav-line-1' id='hello-user'>Hello, {props.currentUser.name.split(" ")[0]}</span>
+                                <br></br>
+                                <span className='nav-line-2'>Account & Lists ▾</span>
+                            </button>
+                            <div className='account-dropdown-content'>
+                                <button className='alt-link' id='sign-out-dropdown' type='submit' onClick={props.logout}>Sign Out</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='nav-cart'>
-                    <button className='nav-cart-button'><i className="fas fa-shopping-cart" id='cart'></i> Cart</button>
+                    <div className='nav-cart'>
+                        <button className='nav-cart-button'><i className="fas fa-shopping-cart" id='cart'></i> Cart</button>
+                    </div>
                 </div>
             </div>
             <div className='sub-navbar'>
