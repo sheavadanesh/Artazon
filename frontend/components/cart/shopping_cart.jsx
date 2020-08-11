@@ -36,9 +36,11 @@ class ShoppingCart extends React.Component {
         return (
             <div className='cart-container'>
                 <span className='cart-head'>Your Shopping Cart</span>
-                {/* <ul className='cart_items'>
-                    {addedItems}
-                </ul> */}
+                <div className='cart_items_cont'>
+                    <ul className='cart_items'>
+                        {addedItems}
+                    </ul>
+                </div>
             </div>
         )
     }

@@ -11,7 +11,7 @@ const UserHome = props => {
         <Redirect to='/items/'/>
             <div className='navbar'>
                 {/* <Link to='/'> */}
-                <Link to='/items/'>
+                <Link to='/items/' replace>
                     <div className='nav-logo'>
                         <div id='artazon-logo' />
                     </div>
@@ -33,7 +33,9 @@ const UserHome = props => {
                         </div>
                     </div>
                     <div className='nav-cart'>
-                        <button className='nav-cart-button'><i className="fas fa-shopping-cart" id='cart'></i> Cart</button>
+                        <Link to='/cart'>
+                            <button className='nav-cart-button'><i className="fas fa-shopping-cart" id='cart'></i> Cart</button>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -48,7 +50,7 @@ const UserHome = props => {
         <Redirect to='/items/' />
             <div className='navbar'>
                 {/* <Link to='/'> */}
-                <Link to='/items/'>
+                <Link to='/items/' replace>
                     <div className='nav-logo'>
                         <div id='artazon-logo' />
                     </div>
@@ -74,8 +76,10 @@ const UserHome = props => {
                             </div>
                         </div>
                     </div> 
-                    <div className='nav-cart'>                        
-                        <button className='nav-cart-button'><i className="fas fa-shopping-cart" id='cart'></i> Cart</button>
+                    <div className='nav-cart'>
+                        <Link to='/login'>
+                            <button className='nav-cart-button'><i className="fas fa-shopping-cart" id='cart'></i> Cart</button>
+                        </Link>
                     </div>
                 </div>
             </div>
