@@ -16,13 +16,6 @@ const receiveItem = (item) => ({
     item
 });
 
-// const addToCart = (itemId) => {
-//     return {
-//         type: ADD_TO_CART,
-//         itemId
-//     }
-// };
-
 export const fetchItems = (data) => dispatch => {
     return (
         ItemAPIUtil.fetchItems(data).then(items => dispatch(receiveItems(items)))
@@ -32,7 +25,3 @@ export const fetchItems = (data) => dispatch => {
 export const fetchItem = (itemId) => dispatch => (
     ItemAPIUtil.fetchItem(itemId).then(item => dispatch(receiveItem(item)))
 );
-
-// export const addToCart = (itemId) => dispatch => (
-//     ItemAPIUtil.
-// )

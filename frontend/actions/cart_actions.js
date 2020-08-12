@@ -1,32 +1,50 @@
-export const ADD_TO_CART = 'ADD_TO_CART';
-export const REMOVE_ITEM = 'REMOVE_ITEM';
-export const SUB_QUANTITY = 'SUB_QUANTITY';
-export const ADD_QUANTITY = 'ADD_QUANTITY';
+import * as CartItemAPIUtil from '../util/cart_item_api_util';
 
-export const addToCart = (item) => {
-    return {
-        type: ADD_TO_CART,
-        item
-    }
-};
+export const RECEIVE_CART_ITEM = 'RECEIVE_CART_ITEM';
+export const RECEIVE_CART_ITEMS = 'RECEIVE_CART_ITEMS';
+export const REMOVE_CART_ITEM = 'REMOVE_CART_ITEM';
 
-export const removeItem = (item) => {
+const receiveCartItems = cartItems => {
     return {
-        type: REMOVE_ITEM,
-        item
+        type: RECEIVE_CART_ITEMS,
+        cartItems
     }
-};
+}
 
-export const subQuantity = (item) => {
+const recieveCartItem = cartItem => {
     return {
-        type: SUB_QUANTITY,
-        item
+        type: RECEIVE_CART_ITEM,
+        cartItem
     }
-};
+}
 
-export const addQuantity = (item) => {
+const removeCartItem = cartItemId => {
     return {
-        type: ADD_QUANTITY,
-        item
+        type: REMOVE_CART_ITEM,
+        cartItemId
     }
-};
+}
+
+export const fetchAllCartItems = () => dispatch => {
+    return (
+        CartItemAPIUtil.fetchAllCartItems().then(cartItems => dispatch(receiveCartItems(cartItems)))
+    )
+}
+
+export const fetchCartItem = cartItemId => dispatch => {
+    return (
+        CartItemAPIUtil.fetchCartItem(cartItemId).then(cartItem => dispatch(receiveCartItem(cartItem)))
+    )
+}
+
+export const createCartItem = cartItem => dispatch => {
+    return (
+        CartItemAPIUtil.createCartItem(cartItem).then(cartItem => dispatch(recieveCartItem(cartItem)))
+    )
+}
+
+export const deleteCartItem = cartItemId => dispatch => {
+    return (
+        CartItemAPIUtil.deleteCartItem(cartItemId).then(() => dispatch(removeCartItem()))
+    )
+}
