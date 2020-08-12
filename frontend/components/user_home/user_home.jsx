@@ -5,6 +5,10 @@ import SearchBarContainer from '../search/search_bar_container';
 import ShoppingCartContainer from '../cart/shopping_cart_container';
 
 const UserHome = props => {
+
+    // const logoutToHome = () => {
+    //     // props.logout().then(() => props.history.push('/items/'))
+    // }
     
     const loggedInGreeting = () => (
         <div className='page'>
@@ -88,6 +92,7 @@ const UserHome = props => {
             </div>
         </div>
     );
+
     return props.currentUser ? loggedInGreeting() : loggedOutGreeting();
 };
 
