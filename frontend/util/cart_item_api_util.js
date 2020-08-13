@@ -1,4 +1,4 @@
-export const fetchAllCartItems = () => {
+export const fetchCartItems = () => {
     return (
         $.ajax({
             method: 'GET',
@@ -27,7 +27,7 @@ export const createCartItem = cartItem => {
     )
 }
 
-export const deleteCartItem = cartItemId = () => {
+export const deleteCartItem = (cartItemId) => {
     return (
         $.ajax({
             method: 'DELETE',

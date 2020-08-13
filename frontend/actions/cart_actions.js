@@ -25,9 +25,9 @@ const removeCartItem = cartItemId => {
     }
 }
 
-export const fetchAllCartItems = () => dispatch => {
+export const fetchCartItems = () => dispatch => {
     return (
-        CartItemAPIUtil.fetchAllCartItems().then(cartItems => dispatch(receiveCartItems(cartItems)))
+        CartItemAPIUtil.fetchCartItems().then(cartItems => dispatch(receiveCartItems(cartItems)))
     )
 }
 

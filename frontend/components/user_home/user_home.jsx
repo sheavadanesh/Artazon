@@ -2,13 +2,8 @@ import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 import SearchBarContainer from '../search/search_bar_container';
-import ShoppingCartContainer from '../cart/shopping_cart_container';
 
 const UserHome = props => {
-
-    // const logoutToHome = () => {
-    //     // props.logout().then(() => props.history.push('/items/'))
-    // }
     
     const loggedInGreeting = () => (
         <div className='page'>
@@ -37,7 +32,7 @@ const UserHome = props => {
                         </div>
                     </div>
                     <div className='nav-cart'>
-                        <Link to='/cart'>
+                        <Link to='/cart_items'>
                             <button className='nav-cart-button'><i className="fas fa-shopping-cart" id='cart'></i> Cart</button>
                         </Link>
                     </div>
