@@ -3,6 +3,8 @@ import React from 'react';
 class ItemShow extends React.Component {
     constructor(props) {
         super(props);
+
+        // this.addToCart = this.addToCart.bind(this);
     }
 
     componentDidMount() {
@@ -14,6 +16,10 @@ class ItemShow extends React.Component {
             this.props.fetchItem();
         }
     };
+
+    // addToCart() {
+
+    // }
 
     render() {
         const { item } = this.props;

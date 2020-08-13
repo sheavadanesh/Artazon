@@ -26,7 +26,12 @@ const App = () => (
             </div>
             <div className='bottom-footer'>
                 <div className='get-to-know'>Get to Know the Creator
-                    <li id='first'>Sheava Danesh  |  <a className='linkedin' href='https://www.linkedin.com/in/sheava-danesh-088818137/'>LinkedIn</a></li>
+                    <li id='first'>
+                        Sheava Danesh  |  
+                        <a className='linkedin' href='https://www.linkedin.com/in/sheava-danesh-088818137/'>  LinkedIn</a>  |  
+                        <a className='linkedin' href='https://angel.co/u/sheava-danesh'>  AngelList</a>  |  
+                        <a className='linkedin' href='https://github.com/sheavadanesh/Artazon'>  GitHub</a>
+                    </li>
                 </div>
             </div>
             <div className='super-bottom-footer'>

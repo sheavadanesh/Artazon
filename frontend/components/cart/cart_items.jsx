@@ -5,12 +5,19 @@ class CartItems extends React.Component {
         super(props);
 
         this.state = {
-            total: 0
+            subtotal: 0
         };
 
+        this.emptyCart = this.emptyCart.bind(this);
+        this.filledCart = this.filledCart.bind(this);
+    }
+
+    componentDidMount() {
+        this.props.fetchCartItems();
     }
 
     filledCart() {
+        let numItems = Object.values(this.props.userCartItems).length;
         return (
             <div className='cart-container'>
                 <span className='cart-head'>Shopping Cart</span>
@@ -18,6 +25,9 @@ class CartItems extends React.Component {
                     <ul className='cart_items'>
 
                     </ul>
+                </div>
+                <div className='subtotal-cont'>
+                    <span>Subtotal ({numItems} items): <span className='cart-subtotal'>${this.state.subtotal}</span></span>
                 </div>
             </div>
         )
@@ -35,7 +45,7 @@ class CartItems extends React.Component {
 
     render() {
 
-        return this.emptyCart();
+        return Object.values(this.props.userCartItems).length === 0 ? this.emptyCart() : this.filledCart()
 
     }
 }
