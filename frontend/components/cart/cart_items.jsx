@@ -23,20 +23,20 @@ class CartItems extends React.Component {
         
         return (
             <div className='cart-container'>
-                <span className='cart-head'>Shopping Cart</span>
-                <div className='cart_items_cont'>
+                <div className='left-side-cart'>
+                    <span className='cart-head'>Shopping Cart</span>
                     <ul className='cart_items'>
                         { cartItemsArr.map( cart_item => (
-                            <li className='item-index-item'>
+                            <li className='cart-index-item'>
                                 <Link className='item-body' to={`/items/${cart_item.id}`}>
-                                    <div className='photo-cont'>
-                                        <img className='index-item-photo' src={cart_item.photoUrl}></img>
+                                    <div className='cart-photo-cont'>
+                                        <img className='cart-index-item-photo' src={cart_item.photoUrl}></img>
                                     </div>
-                                    <span className='index-item-title'>{cart_item.title}</span>
-                                    <span className='index-item-artist'><span className='by'>by </span> {cart_item.artist}</span>
+                                    <span className='cart-item-title'>{cart_item.title}</span>
+                                    <span className='cart-item-artist'><span className='by'>by </span> {cart_item.artist}</span>
                                     <div className='price-shennanigans'>
                                         <span className='dollar-sign'>$</span>
-                                        <span className='index-item-price'>{cart_item.price}</span>
+                                        <span className='cart-item-price'>{cart_item.price}</span>
                                         {/* <span className='mini-deci'>{updatedPrice.slice(-2)}</span> */}
                                     </div>
                                     <span className='free-ship-cap'>FREE Shipping by Artazon</span>
@@ -45,8 +45,10 @@ class CartItems extends React.Component {
                         ))}
                     </ul>
                 </div>
-                <div className='subtotal-cont'>
-                    <span>Subtotal ({numItems} items): <span className='cart-subtotal'>${this.state.subtotal}</span></span>
+                <div className='right-side-cart'>
+                    <div className='subtotal-cont'>
+                        <span>Subtotal ({numItems} items): <span className='cart-subtotal'>${this.state.subtotal}</span></span>
+                    </div>
                 </div>
             </div>
         )

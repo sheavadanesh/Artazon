@@ -8,7 +8,8 @@
     height: 100%;
     top: 100px;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
+    // justify-content: center;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
@@ -16,5 +17,20 @@
     font-size: 21px;
     font-weight: bold;
     margin: auto;
-    // border: 1px solid red;
+    display: block;
+    position: absolute;
+}
+
+.left-side-cart {
+    min-width: 630px;
+    border: 1px solid red;
+    display: block;
+    
+}
+
+.right-side-cart {
+    width: 300px;
+    border: 1px solid blue;
+    align-content: flex-end;
+    display: block;
 }

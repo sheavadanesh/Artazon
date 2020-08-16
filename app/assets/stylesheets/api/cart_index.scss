@@ -1,0 +1,77 @@
+
+.cart-index-item {
+    float: left;
+    border-bottom: 2px solid #ccc;
+    min-width: 630px;
+    height: 340px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    text-decoration: none;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #111111;
+    cursor: pointer;
+    // margin: 20px 15px 5px 15px; 
+    .item-body {
+        text-decoration: none;
+        color: #111111;
+    }
+    .cart-photo-cont {
+        display: block;
+        width: 250px;
+        .cart-index-item-photo {
+            max-width: 250px;
+            max-height: 200px;
+            justify-content: center;
+        }
+    }
+    .cart-item-title {
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
+        margin: 11px 0px 5px 0px;
+        line-height: 16px;
+    }
+    .cart-item-title:hover {
+        color: #c45500;
+    }
+    .cart-item-artist {
+        font-size: 12px;
+        color: #0066C0;
+        display: block;
+    }
+    .by {
+        color: #111111;
+    }
+    .price-shennanigans {
+        display: block;
+        justify-content: left;
+        width: 300px;
+        text-decoration: none;
+        font-size: 21px;
+        display: block;
+        margin: 15px 0px 5px 0px;
+        line-height: 23px;
+    }
+    .cart-item-price {
+        vertical-align: top;
+    }
+    .dollar-sign {
+        font-size: 13px;
+        // vertical-align: top;
+        position: relative;
+        top: -5px;    
+    }
+    .mini-deci {
+        font-size: 13px;
+        // vertical-align: top;
+        position: relative;
+        top: -6px;
+    }
+    .free-ship-cap {
+        font-size: 12px;
+        color: #555555;
+        margin: 5px 0px;
+    }
+}
