@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class CartItems extends React.Component {
     constructor(props) {
@@ -18,12 +19,30 @@ class CartItems extends React.Component {
 
     filledCart() {
         let numItems = Object.values(this.props.userCartItems).length;
+        let cartItemsArr = Object.values(this.props.userCartItems);
+        
         return (
             <div className='cart-container'>
                 <span className='cart-head'>Shopping Cart</span>
                 <div className='cart_items_cont'>
                     <ul className='cart_items'>
-
+                        { cartItemsArr.map( cart_item => (
+                            <li className='item-index-item'>
+                                <Link className='item-body' to={`/items/${cart_item.id}`}>
+                                    <div className='photo-cont'>
+                                        <img className='index-item-photo' src={cart_item.photoUrl}></img>
+                                    </div>
+                                    <span className='index-item-title'>{cart_item.title}</span>
+                                    <span className='index-item-artist'><span className='by'>by </span> {cart_item.artist}</span>
+                                    <div className='price-shennanigans'>
+                                        <span className='dollar-sign'>$</span>
+                                        <span className='index-item-price'>{cart_item.price}</span>
+                                        {/* <span className='mini-deci'>{updatedPrice.slice(-2)}</span> */}
+                                    </div>
+                                    <span className='free-ship-cap'>FREE Shipping by Artazon</span>
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <div className='subtotal-cont'>

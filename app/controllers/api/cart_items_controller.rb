@@ -1,11 +1,16 @@
 class Api::CartItemsController < ApplicationController
     
     def create
+        # debugger
         @cart_item = CartItem.new(cart_item_params)
+        # debugger
         if @cart_item.save
+            # debugger
             render :show
         else
-            render :json @cart_item.errors.full_messages, status: 422
+            debugger
+            # render :json @cart_item.errors.full_messages, status: 422
+            render :json ['cannot save item'], status: 422
         end
     end
 
@@ -20,11 +25,12 @@ class Api::CartItemsController < ApplicationController
     def destroy
         @cart_item = CartItem.find(params[:id])
         @cart_item.destroy 
-        render: index
+        render :index
     end
 
     private
     def cart_item_params 
+        # debugger
         params.require(:cartItem).permit(:user_id, :item_id)
     end
 

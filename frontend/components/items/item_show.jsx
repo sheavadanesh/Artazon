@@ -4,7 +4,13 @@ class ItemShow extends React.Component {
     constructor(props) {
         super(props);
 
-        // this.addToCart = this.addToCart.bind(this);
+        this.state = {
+            quantity: 1,
+            added: false
+        }
+
+        this.addToCart = this.addToCart.bind(this);
+        this.addItem = this.addItem.bind(this);
     }
 
     componentDidMount() {
@@ -17,9 +23,26 @@ class ItemShow extends React.Component {
         }
     };
 
-    // addToCart() {
+    addItem(currentItem) {
+        // let cartItems = this.props.userCartItems;
+        // let cartItemIds = cartItems.map(cartItem => cartItem.item.id);
+        // let 
+        // debugger
+        this.props.createCartItem({
+            user_id: this.props.sessionId,
+            item_id: currentItem.id
+        });
+    }
 
-    // }
+    addToCart(e) {
+        e.preventDefault();
+
+        let { item } = this.props;
+        this.setState({ added: true });
+        this.addItem(item);
+    }
+
+
 
     render() {
         const { item } = this.props;
@@ -74,7 +97,7 @@ class ItemShow extends React.Component {
                         <br></br>
                         <button className='quantity-button'>Qty: 1</button>
                         <br></br>
-                        <button className='add-to-cart'><img className='cart-logo' src='https://artazon-seeds.s3-us-west-1.amazonaws.com/cart-logo.png'></img> Add to Cart</button>
+                        <button className='add-to-cart' onClick={this.addToCart}><img className='cart-logo' src='https://artazon-seeds.s3-us-west-1.amazonaws.com/cart-logo.png'></img> Add to Cart</button>
                         <br></br>
                         <button className='buy-now'><img className='buy-now-logo' src='https://artazon-seeds.s3-us-west-1.amazonaws.com/buy-now-logo.png'></img>Buy Now</button>
                     </div>
