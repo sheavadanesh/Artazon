@@ -6,10 +6,8 @@
     width: 100%;
     min-height: 500px;
     height: 100%;
-    top: 100px;
+    margin-top: 94px;
     display: flex;
-    // flex-direction: column;
-    // justify-content: center;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
@@ -17,6 +15,8 @@
     font-size: 21px;
     font-weight: bold;
     margin: auto;
+    margin-top: -38px;
+    margin-left: 18px;
     display: block;
     position: absolute;
 }
@@ -24,13 +24,116 @@
 .left-side-cart {
     min-width: 630px;
     border: 1px solid red;
-    display: block;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .right-side-cart {
     width: 300px;
     border: 1px solid blue;
-    align-content: flex-end;
-    display: block;
+    display: flex;
+    flex-direction: column;
+
+}
+.subtotal-cont {
+    width: 100%;
+}
+
+.cart-index-item {
+    // border: 1px solid red;
+    border-bottom: 1px solid #ccc;
+    min-width: 627px;
+    height: 210px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #111111;
+    margin-right: 15px; 
+    margin-left: -18px;
+    .item-body {
+        text-decoration: none;
+        color: #111111;
+    }
+    .cart-photo-cont {
+        display: flex;
+        justify-content: center;
+        width: 180px;
+        height: 180px;
+        // border: 1px solid orange;
+        margin: 15px;
+        margin-left: 0px;
+        .cart-index-item-photo {
+            max-width: 180px;
+            max-height: 180px;
+
+        }
+    }
+    .cart-item-title {
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: bold;
+        color: #0066C0;
+        display: block;
+        margin: 18px 0px 5px 0px;
+        line-height: 16px;
+    }
+    .cart-item-title:hover {
+        color: #c45500;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .cart-item-artist {
+        font-size: 12px;
+        color: #555555;
+        display: block;
+    }
+    .by {
+        color: #555555;
+    }
+    .price-shennanigans {
+        float: right;
+        display: flex;
+        justify-content: left;
+        // width: 300px;
+        text-decoration: none;
+        font-size: 19px;
+        font-weight: bold;
+        margin: 15px 0px 5px 0px;
+        line-height: 23px;
+    }
+    .cart-item-price {
+        vertical-align: top;
+    }
+    .cart-dollar-sign {
+        font-size: 17px;
+        position: relative;
+        // top: -1px;
+    }
+    .cart-free-ship-cap {
+        font-size: 13px;
+        color: #111111;
+        margin: 5px 0px;
+        width: 200px;
+    }
+}
+.mid-side-specific {
+    display: flex;
+    flex-direction: column;
+}
+
+.in-stock-cart {
+    color: #067D62;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.gift {
+    font-size: 12px;
+    margin-left: 0px;
+}
+.gift-text {
+    vertical-align: 17%;
+    padding-left: 3px;
 }

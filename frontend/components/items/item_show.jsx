@@ -24,10 +24,6 @@ class ItemShow extends React.Component {
     };
 
     addItem(currentItem) {
-        // let cartItems = this.props.userCartItems;
-        // let cartItemIds = cartItems.map(cartItem => cartItem.item.id);
-        // let 
-        // debugger
         this.props.createCartItem({
             user_id: this.props.sessionId,
             item_id: currentItem.id
