@@ -6,11 +6,11 @@ const mapStateToProps = state => {
     return ({
         userCartItems: state.entities.cartItems,
         curentUserId: state.session.id
-        
     })
 };
 
 const mapDispatchToProps = dispatch => {
+    // debugger
     return ({
         fetchCartItems: () => dispatch(fetchCartItems()),
         fetchCartItem: cartItem => dispatch(fetchCartItem(cartItem)),

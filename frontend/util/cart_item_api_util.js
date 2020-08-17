@@ -28,6 +28,7 @@ export const createCartItem = cartItem => {
 }
 
 export const deleteCartItem = (cartItemId) => {
+    // debugger
     return (
         $.ajax({
             method: 'DELETE',

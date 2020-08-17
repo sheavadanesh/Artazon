@@ -23,9 +23,10 @@ class Api::CartItemsController < ApplicationController
     end
 
     def destroy
+        # debugger
         @cart_item = CartItem.find(params[:id])
         @cart_item.destroy 
-        render :index
+        render :show
     end
 
     private

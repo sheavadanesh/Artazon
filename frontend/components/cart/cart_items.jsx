@@ -17,34 +17,54 @@ class CartItems extends React.Component {
         this.props.fetchCartItems();
     }
 
+    componentDidUpdate(prevProps) {
+        const prev = Object.values(prevProps.userCartItems);
+        const current = Object.values(this.props.userCartItems);
+        // debugger
+        if (prev.length !== current.length) {
+            this.props.fetchCartItems();
+        }
+    }
+
     filledCart() {
         let numItems = Object.values(this.props.userCartItems).length;
-        let cartItemsArr = Object.values(this.props.userCartItems);
+        let cartItemsArr = Object.keys(this.props.userCartItems);
         
         return (
             <div className='cart-container'>
                 <header className='cart-head'>Shopping Cart</header>
                 <div className='left-side-cart'>
                     <ul className='cart_items'>
-                        { cartItemsArr.map( cart_item => (
-                            <li className='cart-index-item' key={cart_item.id}>
+                        { cartItemsArr.map( cartItemId => (
+                            <li className='cart-index-item' key={cartItemId}>
                                     <div className='cart-photo-cont'>
-                                        <img className='cart-index-item-photo' src={cart_item.photoUrl}></img>
+                                        <img className='cart-index-item-photo' src={this.props.userCartItems[cartItemId].photoUrl}></img>
                                     </div>
                                     <div className='mid-side-specific'>
-                                        <Link className='item-body' to={`/items/${cart_item.id}`}>
-                                            <span className='cart-item-title'>{cart_item.title}</span>
+                                        <Link className='item-body' to={`/items/${this.props.userCartItems[cartItemId].id}`}>
+                                            <span className='cart-item-title'>{this.props.userCartItems[cartItemId].title}</span>
                                         </Link>
-                                        <span className='cart-item-artist'><span className='by'>by </span> {cart_item.artist}</span>
+                                        <span className='cart-item-artist'><span className='by'>by </span> {this.props.userCartItems[cartItemId].artist}</span>
                                         <span className='in-stock-cart'>In Stock</span>
                                         <span className='cart-free-ship-cap'>FREE Shipping & FREE Returns</span>
                                         <label className='gift'>
                                             <input type='checkbox' className='yes-gift'/><span className='gift-text'>This is a gift</span>
                                         </label>
-                                    {/* <select className='quantity-cart'>Qty: </select> */}
-                                    </div>
+                                        <select className='quantity-cart' value='Qty:'>
+                                            <option value='1'>Qty: 1</option>
+                                            <option value='2'>2</option>
+                                            <option value='3'>3</option>
+                                            <option value='4'>4</option>
+                                            <option value='5'>5</option>
+                                            <option value='6'>6</option>
+                                            <option value='7'>7</option>
+                                            <option value='8'>8</option>
+                                            <option value='9'>9</option>
+                                            <option value='10'>10</option>
+                                        </select>
+                                    </div><button className='delete-cart-item' onClick={() => this.props.deleteCartItem(cartItemId)}>Delete</button>
                                     <div className='price-shennanigans'>
-                                        <span className='cart-dollar-sign'>$</span><span className='cart-item-price'>{cart_item.price}</span>
+                                        <span className='cart-dollar-sign'>$</span><span className='cart-item-price'>{this.props.userCartItems[cartItemId].price}</span>
                                     </div>
                             </li>
                         ))}

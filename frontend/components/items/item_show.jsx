@@ -1,4 +1,6 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
+import { LOGOUT_CURRENT_USER } from '../../actions/session_actions';
 
 class ItemShow extends React.Component {
     constructor(props) {
@@ -33,12 +35,14 @@ class ItemShow extends React.Component {
     addToCart(e) {
         e.preventDefault();
 
-        let { item } = this.props;
-        this.setState({ added: true });
-        this.addItem(item);
+        if (this.props.sessionId) {
+            let { item } = this.props;
+            this.setState({ added: true });
+            this.addItem(item);
+        } else {
+            <Redirect to='/login/'/>
+        }
     }
-
-
 
     render() {
         const { item } = this.props;
@@ -113,7 +117,7 @@ class ItemShow extends React.Component {
                         <div className='write-review'>Review this product
                         <span className='review-subtext'>Share your thoughts with other customers</span>
                         <button className='write-review-button'>Write a customer review</button>
-                    </div> */}
+                    // </div> */}
                     </div>
                     <div className='right-side'>
 

@@ -139,23 +139,24 @@
 
 .quantity-cart {
     border-radius: 3px;
-    width: 367px;
-    height: 32px;
+    width: 80px;
+    height: 30px;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 13px;
     color: #111111;
-    margin-top: -7px;
     background-image: linear-gradient(to bottom, rgba(220, 226, 226, 0.0), rgba(220, 226, 226, 1));
     border-color: #adb1b8 #a2a6ac #8d9096;
     border-width: thin;
+    margin-top: 7px;
     cursor: pointer;
     position: relative;
     text-align: center;
 }
-
 .quantity-cart:hover {
     background-image: linear-gradient(to bottom,rgba(206, 207, 207, 0.3), rgba(206, 207, 207, 0.7));
 }
-.qty-arrow {
-    vertical-align: 10%;
+.quantity-cart:focus {
+    border-color: #ff9900;
+    box-shadow: 0px 0px 4px #ff9900;
+    outline: none;
 }
