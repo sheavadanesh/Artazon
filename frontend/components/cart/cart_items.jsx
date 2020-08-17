@@ -41,6 +41,7 @@ class CartItems extends React.Component {
                                         <label className='gift'>
                                             <input type='checkbox' className='yes-gift'/><span className='gift-text'>This is a gift</span>
                                         </label>
+                                    {/* <select className='quantity-cart'>Qty: </select> */}
                                     </div>
                                     <div className='price-shennanigans'>
                                         <span className='cart-dollar-sign'>$</span><span className='cart-item-price'>{cart_item.price}</span>
