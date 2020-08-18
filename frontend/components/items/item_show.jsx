@@ -47,8 +47,10 @@ class ItemShow extends React.Component {
 
     render() {
         const { item } = this.props;
-        if (item === undefined) return null;
         let updatedPrice = (Math.round(item.price * 100)/100).toFixed(2);
+        
+        if (item === undefined) return null;
+
         return (
             <div className='show'>
                 <div className='item-show'>
