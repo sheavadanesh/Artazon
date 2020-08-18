@@ -235,3 +235,18 @@
 .delete-cart-item:focus {
     outline: none;
 }
+
+.cart-head#empty-cart {
+    border: none;
+    position: relative;
+}
+
+.empty-cart-message {
+    font-size: 21px;
+    font-weight: bold;
+    margin: auto;
+    margin-left: 22px;
+    margin-top: 7px;
+    display: block;
+    position: absolute;
+}

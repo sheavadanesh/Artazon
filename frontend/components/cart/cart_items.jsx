@@ -40,7 +40,6 @@ class CartItems extends React.Component {
         let numItems = Object.values(this.props.userCartItems).length;
         let cartItemsArr = Object.keys(this.props.userCartItems);
         let actualItemsArr = Object.values(this.props.userCartItems);
-        // debugger
 
         return (
             <div className='cart-container'>
@@ -99,9 +98,9 @@ class CartItems extends React.Component {
     emptyCart() {
         return (
             <div className='cart-container'>
-                <span className='cart-head'>Shopping Cart</span>
+                <span className='cart-head' id='empty-cart'>Shopping Cart</span>
                 <br></br>
-                <span className='cart-head' id='empty-cart'>Your Shopping Cart is empty.</span>
+                <span className='empty-cart-message'>Your Shopping Cart is empty.</span>
             </div>
         )
     }

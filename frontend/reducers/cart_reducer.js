@@ -11,9 +11,7 @@ const cartReducer = (state = {}, action) => {
         case RECEIVE_CART_ITEMS:
             return action.cartItems;
         case REMOVE_CART_ITEM:
-            // debugger
             delete newState[action.cartItemId];
-            // debugger
             return newState;
 
         default:
