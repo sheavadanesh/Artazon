@@ -4,8 +4,8 @@ import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
 import ItemShowContainer from './items/item_show_container';
 import ItemIndexContainer from './items/item_index_container';
-import { Link, Switch, Route } from 'react-router-dom';
 import CartItemsContainer from './cart/cart_items_container';
+import { Link, Switch, Route } from 'react-router-dom';
 
 const App = () => (
     <div className='app'>
@@ -18,7 +18,7 @@ const App = () => (
             <Route path='/cart_items' component={CartItemsContainer} />
         </Switch>
         <footer className='footer'>
-            <div className='back-to-top'>
+            <div className='back-to-top' onClick={() => window.scrollTo(0, 0)}>
                 Back to top
             </div>
             <div className='bottom-footer'>
