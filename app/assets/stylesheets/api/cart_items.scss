@@ -15,15 +15,24 @@
     font-size: 21px;
     font-weight: bold;
     margin: auto;
-    margin-top: -38px;
-    margin-left: 18px;
+    margin-top: -24px;
+    margin-left: 22px;
     display: block;
     position: absolute;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 14px;
+    min-width: 627px;
+}
+
+.price-header {
+    color: #565959;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 .left-side-cart {
     min-width: 630px;
-    border: 1px solid red;
+    // border: 1px solid red;
     display: flex;
     flex-direction: column;
 }
@@ -42,6 +51,7 @@
 .cart-index-item {
     // border: 1px solid red;
     border-bottom: 1px solid #ccc;
+    // border-top: 1px solid #ccc;
     min-width: 627px;
     height: 210px;
     list-style-type: none;
@@ -84,7 +94,7 @@
         text-decoration: underline;
         cursor: pointer;
     }
-    .cart-item-artist {
+    .cart-item-artist { 
         font-size: 12px;
         color: #555555;
         display: block;
@@ -102,6 +112,7 @@
         font-weight: bold;
         margin: 15px 0px 5px 0px;
         line-height: 23px;
+        margin-left: 142px;
     }
     .cart-item-price {
         vertical-align: top;
@@ -137,6 +148,11 @@
     padding-left: 3px;
 }
 
+.qty-delete-row {
+    display: flex;
+    flex-direction: row;
+}
+
 .quantity-cart {
     border-radius: 3px;
     width: 80px;
@@ -151,6 +167,7 @@
     cursor: pointer;
     position: relative;
     text-align: center;
+    padding: auto;
 }
 .quantity-cart:hover {
     background-image: linear-gradient(to bottom,rgba(206, 207, 207, 0.3), rgba(206, 207, 207, 0.7));
@@ -158,5 +175,30 @@
 .quantity-cart:focus {
     border-color: #ff9900;
     box-shadow: 0px 0px 4px #ff9900;
+    outline: none;
+}
+
+.delete-cart-item {
+    color: #0066C0;
+    background: transparent;
+    width: 50px;
+    height: 20px;
+    border: none;
+    border-left: 1px solid #ddd;
+    margin: auto;
+    // margin-left: 14px;
+    margin-left: 0px;
+    // padding-left: 13px;
+    padding-left: 10px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 12px;
+    margin-top: 12px;
+}
+.delete-cart-item:hover {
+    cursor: pointer;
+    color: #ff9900;
+    text-decoration: underline;
+}
+.delete-cart-item:focus {
     outline: none;
 }

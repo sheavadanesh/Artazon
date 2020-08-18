@@ -4,7 +4,7 @@ import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
 import ItemShowContainer from './items/item_show_container';
 import ItemIndexContainer from './items/item_index_container';
-import { Link, Switch, Route, Redirect } from 'react-router-dom';
+import { Link, Switch, Route } from 'react-router-dom';
 import CartItemsContainer from './cart/cart_items_container';
 
 const App = () => (
@@ -16,9 +16,6 @@ const App = () => (
             <Route path='/items/:itemId' component={ItemShowContainer} />
             <Route path='/items' component={ItemIndexContainer} />
             <Route path='/cart_items' component={CartItemsContainer} />
-            {/* may cause problems because this is not redirecting */}
-            {/* write any other routes about the / route and inside
-            of this switch tag */}
         </Switch>
         <footer className='footer'>
             <div className='back-to-top'>

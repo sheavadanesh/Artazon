@@ -1,5 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
+import LoginFormContainer from '../session_form/login_form_container';
 import { LOGOUT_CURRENT_USER } from '../../actions/session_actions';
 
 class ItemShow extends React.Component {
@@ -40,7 +41,7 @@ class ItemShow extends React.Component {
             this.setState({ added: true });
             this.addItem(item);
         } else {
-            <Redirect to='/login/'/>
+            this.props.history.push('/login');
         }
     }
 
@@ -95,7 +96,7 @@ class ItemShow extends React.Component {
                         <br></br>
                         <span className='in-stock'>In Stock.</span>
                         <br></br>
-                        <button className='quantity-button'>Qty: 1</button>
+                        {/* <button className='quantity-button'>Qty: 1</button> */}
                         <br></br>
                         <button className='add-to-cart' onClick={this.addToCart}><img className='cart-logo' src='https://artazon-seeds.s3-us-west-1.amazonaws.com/cart-logo.png'></img> Add to Cart</button>
                         <br></br>

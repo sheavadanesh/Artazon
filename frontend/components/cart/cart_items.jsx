@@ -20,7 +20,7 @@ class CartItems extends React.Component {
     componentDidUpdate(prevProps) {
         const prev = Object.values(prevProps.userCartItems);
         const current = Object.values(this.props.userCartItems);
-        // debugger
+        
         if (prev.length !== current.length) {
             this.props.fetchCartItems();
         }
@@ -33,24 +33,26 @@ class CartItems extends React.Component {
         return (
             <div className='cart-container'>
                 <header className='cart-head'>Shopping Cart</header>
+                {/* <span className='price-header'>Price</span> */}
                 <div className='left-side-cart'>
                     <ul className='cart_items'>
                         { cartItemsArr.map( cartItemId => (
                             <li className='cart-index-item' key={cartItemId}>
-                                    <div className='cart-photo-cont'>
-                                        <img className='cart-index-item-photo' src={this.props.userCartItems[cartItemId].photoUrl}></img>
-                                    </div>
-                                    <div className='mid-side-specific'>
-                                        <Link className='item-body' to={`/items/${this.props.userCartItems[cartItemId].id}`}>
-                                            <span className='cart-item-title'>{this.props.userCartItems[cartItemId].title}</span>
-                                        </Link>
-                                        <span className='cart-item-artist'><span className='by'>by </span> {this.props.userCartItems[cartItemId].artist}</span>
-                                        <span className='in-stock-cart'>In Stock</span>
-                                        <span className='cart-free-ship-cap'>FREE Shipping & FREE Returns</span>
-                                        <label className='gift'>
-                                            <input type='checkbox' className='yes-gift'/><span className='gift-text'>This is a gift</span>
-                                        </label>
-                                        <select className='quantity-cart' value='Qty:'>
+                                <div className='cart-photo-cont'>
+                                    <img className='cart-index-item-photo' src={this.props.userCartItems[cartItemId].photoUrl}></img>
+                                </div>
+                                <div className='mid-side-specific'>
+                                    <Link className='item-body' to={`/items/${this.props.userCartItems[cartItemId].id}`}>
+                                        <span className='cart-item-title'>{this.props.userCartItems[cartItemId].title}</span>
+                                    </Link>
+                                    <span className='cart-item-artist'><span className='by'>by </span> {this.props.userCartItems[cartItemId].artist}</span>
+                                    <span className='in-stock-cart'>In Stock</span>
+                                    <span className='cart-free-ship-cap'>FREE Shipping & FREE Returns</span>
+                                    <label className='gift'>
+                                        <input type='checkbox' className='yes-gift'/><span className='gift-text'>This is a gift</span>
+                                    </label>
+                                    <div className='qty-delete-row'>
+                                        {/* <select className='quantity-cart' value='Qty:'>
                                             <option value='1'>Qty: 1</option>
                                             <option value='2'>2</option>
                                             <option value='3'>3</option>
@@ -61,11 +63,13 @@ class CartItems extends React.Component {
                                             <option value='8'>8</option>
                                             <option value='9'>9</option>
                                             <option value='10'>10</option>
-                                        </select>
-                                    </div><button className='delete-cart-item' onClick={() => this.props.deleteCartItem(cartItemId)}>Delete</button>
-                                    <div className='price-shennanigans'>
-                                        <span className='cart-dollar-sign'>$</span><span className='cart-item-price'>{this.props.userCartItems[cartItemId].price}</span>
+                                        </select> */}
+                                        <button className='delete-cart-item' onClick={() => this.props.deleteCartItem(cartItemId)}>Delete</button>
                                     </div>
+                                </div>
+                                <div className='price-shennanigans'>
+                                    <span className='cart-dollar-sign'>$</span><span className='cart-item-price'>{(Math.round(this.props.userCartItems[cartItemId].price * 100) / 100).toFixed(2)}</span>
+                                </div>
                             </li>
                         ))}
                     </ul>
