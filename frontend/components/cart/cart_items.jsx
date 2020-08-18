@@ -11,6 +11,16 @@ class CartItems extends React.Component {
 
         this.emptyCart = this.emptyCart.bind(this);
         this.filledCart = this.filledCart.bind(this);
+        this.updatedSubtotal = this.updatedSubtotal.bind(this);
+    }
+
+    updatedSubtotal(arr) {
+        let newArr = [];
+        arr.forEach(item => newArr.push(item.price));
+        let total = newArr.reduce((a, b) => a + b, 0);
+        return (
+            (Math.round(total * 100) / 100).toFixed(2)
+        )
     }
 
     componentDidMount() {
@@ -29,7 +39,9 @@ class CartItems extends React.Component {
     filledCart() {
         let numItems = Object.values(this.props.userCartItems).length;
         let cartItemsArr = Object.keys(this.props.userCartItems);
-        
+        let actualItemsArr = Object.values(this.props.userCartItems);
+        // debugger
+
         return (
             <div className='cart-container'>
                 <header className='cart-head'>Shopping Cart</header>
@@ -76,7 +88,7 @@ class CartItems extends React.Component {
                 </div>
                 <div className='right-side-cart'>
                     <div className='subtotal-cont'>
-                        <span>Subtotal ({numItems} items): <span className='cart-subtotal'>${this.state.subtotal}</span></span>
+                        <span>Subtotal ({numItems} items): <span className='cart-subtotal'>${this.updatedSubtotal(actualItemsArr)}</span></span>
                     </div>
                     <button className='proceed-to-checkout'>Proceed to checkout</button>
                 </div>

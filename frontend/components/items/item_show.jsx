@@ -1,6 +1,4 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
-import LoginFormContainer from '../session_form/login_form_container';
 import { LOGOUT_CURRENT_USER } from '../../actions/session_actions';
 
 class ItemShow extends React.Component {
@@ -9,6 +7,7 @@ class ItemShow extends React.Component {
 
         this.state = {
             quantity: 1,
+            // subtotal: 0,
             added: false
         }
 
@@ -40,6 +39,7 @@ class ItemShow extends React.Component {
             let { item } = this.props;
             this.setState({ added: true });
             this.addItem(item);
+            // this.state.subtotal += this.props.item.price;
         } else {
             this.props.history.push('/login');
         }
@@ -48,7 +48,7 @@ class ItemShow extends React.Component {
     render() {
         const { item } = this.props;
         let updatedPrice = (Math.round(item.price * 100)/100).toFixed(2);
-        
+
         if (item === undefined) return null;
 
         return (

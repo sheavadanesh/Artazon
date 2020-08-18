@@ -43,9 +43,11 @@
     border: 1px #ddd solid;
     border-radius: 4px;
     display: block;
-    // flex-direction: column;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     background-color: #f3f3f3;
+    padding: auto;
+    margin-left: 20px;
+    margin-top: -20px;
 }
 .subtotal-cont {
     width: 100%;
@@ -68,7 +70,7 @@
     border-color: #a88734 #9c7e31 #846a29;
     border-width: thin;
     cursor: pointer;
-    margin: 0px auto 0px auto;
+    margin: 0px 20px;
 }
 .proceed-to-checkout:hover {
     background-image: linear-gradient(to bottom, rgba(240, 193, 75, 0.5), rgba(240, 193, 75, 1));
