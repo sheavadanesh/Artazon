@@ -204,11 +204,6 @@
         box-shadow: 0px 0px 4px #ff9900;
         outline: 0;
     }
-    
-    // .item-added::before {
-    //     display: none;
-    //     content: '';
-    // }
 
     .item-added {
         width: 154px;
@@ -223,7 +218,6 @@
         position: relative;
         justify-content: center;
         align-items: center;
-        // box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.2);
     }
 
     .add-to-cart:focus .item-added {
@@ -258,7 +252,6 @@
         border-width: thin;
         cursor: pointer;
         box-shadow: 0 1px 0 rgba(255,255,255,.6) inset;
-
     }
     .buy-now:hover {
         background-image: linear-gradient(to bottom, rgba(214, 123, 12, 0.5), rgb(237, 146, 32));

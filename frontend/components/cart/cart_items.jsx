@@ -89,7 +89,11 @@ class CartItems extends React.Component {
                     <div className='subtotal-cont'>
                         <span>Subtotal ({numItems} items): <span className='cart-subtotal'>${this.updatedSubtotal(actualItemsArr)}</span></span>
                     </div>
-                    <button className='proceed-to-checkout'>Proceed to checkout</button>
+                    <button className='proceed-to-checkout'>Proceed to checkout
+                        <div className='checkout-message'>
+                            Thank you! Your order has been received.
+                        </div>
+                    </button>
                     {/* <div className='checkout'>Thank you! Your order has been received.</div> */}
                 </div>
             </div>
