@@ -1,5 +1,4 @@
 import React from 'react';
-import { LOGOUT_CURRENT_USER } from '../../actions/session_actions';
 
 class ItemShow extends React.Component {
     constructor(props) {
@@ -7,7 +6,6 @@ class ItemShow extends React.Component {
 
         this.state = {
             quantity: 1,
-            // subtotal: 0,
             added: false
         }
 
@@ -39,7 +37,6 @@ class ItemShow extends React.Component {
             let { item } = this.props;
             this.setState({ added: true });
             this.addItem(item);
-            // this.state.subtotal += this.props.item.price;
         } else {
             this.props.history.push('/login');
         }
@@ -100,7 +97,11 @@ class ItemShow extends React.Component {
                         <br></br>
                         {/* <button className='quantity-button'>Qty: 1</button> */}
                         <br></br>
-                        <button className='add-to-cart' onClick={this.addToCart}><img className='cart-logo' src='https://artazon-seeds.s3-us-west-1.amazonaws.com/cart-logo.png'></img> Add to Cart</button>
+                        <button className='add-to-cart' onClick={this.addToCart}><img className='cart-logo' src='https://artazon-seeds.s3-us-west-1.amazonaws.com/cart-logo.png'></img> Add to Cart
+                            <div className='item-added'>
+                                    <span className='check-mark'>✓</span> Added to Cart
+                            </div> 
+                        </button>
                         <br></br>
                         <button className='buy-now'><img className='buy-now-logo' src='https://artazon-seeds.s3-us-west-1.amazonaws.com/buy-now-logo.png'></img>Buy Now</button>
                     </div>
