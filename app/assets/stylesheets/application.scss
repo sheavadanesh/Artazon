@@ -51,11 +51,15 @@
     text-decoration: underline;
     text-decoration-color: transparent;
 }
-.account-container:hover, .account-container:focus {
+.account-container:hover, .account-container:active {
     outline: none;
     border: 1px solid white;
     border-radius: 3px;
     text-decoration: none;
+}
+
+.account-container:focus {
+    outline: none;
 }
 
 .nav-line-1 {
@@ -172,5 +176,13 @@
 
 #dropdown-yellow:hover {
     background-image: linear-gradient(to bottom, rgba(240, 193, 75, 0.5), rgba(240, 193, 75, 1));
+}
+#dropdown-yellow:active {
+    background-color: #ff9900;
+    border: none;
+    outline: none;
+}
+#dropdown-yellow:focus {
+    outline: none;
 }
 

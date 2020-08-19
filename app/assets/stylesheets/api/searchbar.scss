@@ -46,7 +46,7 @@
     border: none;
     border-radius: 0px 4px 4px 0px;
 }
-.submit-search:focus {
+.submit-search:focus, .submit-search:active {
     outline: none;
 }
 .submit-search:hover {

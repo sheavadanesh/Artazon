@@ -10,9 +10,12 @@
     padding: 18px 10px 10px 10px;
 
 }
-.nav-cart-button:focus, .nav-cart-button:hover {
+.nav-cart-button:active, .nav-cart-button:hover {
     border: 1px solid white;
     border-radius: 3px;
+    outline: none;
+}
+.nav-cart-button:focus {
     outline: none;
 }
 

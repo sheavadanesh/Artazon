@@ -97,9 +97,16 @@
     border-width: thin;
     cursor: pointer;
 }
-
 #yellow:hover {
     background-image: linear-gradient(to bottom, rgba(240, 193, 75, 0.5), rgba(240, 193, 75, 1));
+}
+#yellow:active {
+    border-color: #ff9900;
+    box-shadow: 0px 0px 4px #ff9900;
+    outline: none;
+}
+#yellow:focus {
+    outline: none;
 }
 
 #gray {
@@ -117,9 +124,14 @@
     position: relative;
     text-align: center;
 }
-
 #gray:hover {
     background-image: linear-gradient(to bottom,rgba(206, 207, 207, 0.3), rgba(206, 207, 207, 0.7));
+}
+#gray:active {
+    outline: none;
+}
+#gray:focus {
+    outline: none;
 }
 
 .bottom-container {

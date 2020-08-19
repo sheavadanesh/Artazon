@@ -75,11 +75,14 @@
 .proceed-to-checkout:hover {
     background-image: linear-gradient(to bottom, rgba(240, 193, 75, 0.5), rgba(240, 193, 75, 1));
 }
-.proceed-to-checkout:focus {
+.proceed-to-checkout:active {
     border-color: #ff9900;
     box-shadow: 0px 0px 4px #ff9900;
     outline: none; 
     padding-top: 8px;
+}
+.proceed-to-checkout:focus {
+    outline: none;
 }
 
 .checkout-message {
@@ -225,9 +228,12 @@
 .quantity-cart:hover {
     background-image: linear-gradient(to bottom,rgba(206, 207, 207, 0.3), rgba(206, 207, 207, 0.7));
 }
-.quantity-cart:focus {
+.quantity-cart:active {
     border-color: #ff9900;
     box-shadow: 0px 0px 4px #ff9900;
+    outline: none;
+}
+.quantity-cart:focus {
     outline: none;
 }
 
@@ -252,7 +258,7 @@
     color: #ff9900;
     text-decoration: underline;
 }
-.delete-cart-item:focus {
+.delete-cart-item:focus, .delete-cart-item:active {
     outline: none;
 }
 
