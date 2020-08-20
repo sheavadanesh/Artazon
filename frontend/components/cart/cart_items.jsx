@@ -44,7 +44,6 @@ class CartItems extends React.Component {
         return (
             <div className='cart-container'>
                 <header className='cart-head'>Shopping Cart</header>
-                {/* <span className='price-header'>Price</span> */}
                 <div className='left-side-cart'>
                     <ul className='cart_items'>
                         { cartItemsArr.map( cartItemId => (
