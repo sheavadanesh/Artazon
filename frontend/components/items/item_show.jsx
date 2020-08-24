@@ -1,13 +1,13 @@
 import React from 'react';
-import AlreadyAdded from './already_added';
+import CartItems from '../cart/cart_items';
 
 class ItemShow extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            addedCartItems: []
-        }
+        // this.state = {
+        //     addedCartItems: []
+        // }
 
         this.addToCart = this.addToCart.bind(this);
         this.addItem = this.addItem.bind(this);
@@ -35,13 +35,29 @@ class ItemShow extends React.Component {
         e.preventDefault();
 
         if (this.props.sessionId) {
-            let { item } = this.props;
+            let { item, userCartItems } = this.props;
+            let cartItems = Object.values(userCartItems);
+            let itemsArr = [];
+            for (let i = 0; i < cartItems.length; i++) {
+                itemsArr.push(cartItems[i])
+            }
+            // const cartItemIds = Object.keys(userCartItems).map( (itemId) => {
+            //     userCartItems.itemId;
+            // })
             debugger
-            if (this.state.addedCartItems.includes(item)) {
-                <AlreadyAdded />;
+            if (itemsArr.includes(item)) {
+                debugger
+                return (
+                    <div>
+                        <span className='already-added-message'>
+                            already added to your cart
+                        </span>
+                    </div>
+                )
             } else {
                 this.addItem(item);
-                this.state.addedCartItems.push(item);
+                // this.state.addedCartItems.push(item);
+                debugger
             }
         } else {
             this.props.history.push('/login');

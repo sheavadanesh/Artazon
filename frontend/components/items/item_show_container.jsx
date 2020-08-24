@@ -6,6 +6,7 @@ import { createCartItem } from '../../actions/cart_actions';
 const mapStateToProps = (state, ownProps) => {
     return {
         item: state.entities.items[ownProps.match.params.itemId],
+        userCartItems: state.entities.cartItems,
         sessionId: state.session.id
     }
 };
