@@ -1,13 +1,9 @@
 import React from 'react';
+import AlreadyAdded from './already_added';
 
 class ItemShow extends React.Component {
     constructor(props) {
         super(props);
-
-        this.state = {
-            quantity: 1,
-            added: false
-        }
 
         this.addToCart = this.addToCart.bind(this);
         this.addItem = this.addItem.bind(this);
@@ -35,7 +31,7 @@ class ItemShow extends React.Component {
 
         if (this.props.sessionId) {
             let { item } = this.props;
-            this.setState({ added: true });
+            // if ()
             this.addItem(item);
         } else {
             this.props.history.push('/login');
