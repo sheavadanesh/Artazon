@@ -5,8 +5,13 @@ class ItemShow extends React.Component {
     constructor(props) {
         super(props);
 
+        this.state = {
+            addedCartItems: []
+        }
+
         this.addToCart = this.addToCart.bind(this);
         this.addItem = this.addItem.bind(this);
+        
     }
 
     componentDidMount() {
@@ -31,8 +36,13 @@ class ItemShow extends React.Component {
 
         if (this.props.sessionId) {
             let { item } = this.props;
-            // if ()
-            this.addItem(item);
+            debugger
+            if (this.state.addedCartItems.includes(item)) {
+                <AlreadyAdded />;
+            } else {
+                this.addItem(item);
+                this.state.addedCartItems.push(item);
+            }
         } else {
             this.props.history.push('/login');
         }
