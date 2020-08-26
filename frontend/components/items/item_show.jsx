@@ -1,5 +1,4 @@
 import React from 'react';
-import CartItems from '../cart/cart_items';
 
 class ItemShow extends React.Component {
     constructor(props) {
@@ -11,7 +10,8 @@ class ItemShow extends React.Component {
     }
 
     componentDidMount() {
-        this.props.fetchItem()
+        this.props.fetchItems();
+        this.props.fetchItem(this.props.matchedId);
     };
 
     componentDidUpdate(prevProps) {
@@ -37,9 +37,7 @@ class ItemShow extends React.Component {
             for (let i = 0; i < cartItems.length; i++) {
                 itemsArr.push(cartItems[i])
             }
-            // debugger
             if (itemsArr.includes(item)) {
-                // debugger
                 return (
                     <div>
                         <span className='already-added-message'>
@@ -49,7 +47,6 @@ class ItemShow extends React.Component {
                 )
             } else {
                 this.addItem(item);
-                // debugger
             }
         } else {
             this.props.history.push('/login');
@@ -58,6 +55,7 @@ class ItemShow extends React.Component {
 
     render() {
         const { item } = this.props;
+        debugger
         let updatedPrice = (Math.round(item.price * 100)/100).toFixed(2);
 
         if (item === undefined) return null;
