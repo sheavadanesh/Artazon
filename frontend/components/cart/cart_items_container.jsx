@@ -10,7 +10,6 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => {
-    // debugger
     return ({
         fetchCartItems: () => dispatch(fetchCartItems()),
         fetchCartItem: cartItem => dispatch(fetchCartItem(cartItem)),

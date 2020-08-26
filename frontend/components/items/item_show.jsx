@@ -5,10 +5,6 @@ class ItemShow extends React.Component {
     constructor(props) {
         super(props);
 
-        // this.state = {
-        //     addedCartItems: []
-        // }
-
         this.addToCart = this.addToCart.bind(this);
         this.addItem = this.addItem.bind(this);
         
@@ -41,12 +37,9 @@ class ItemShow extends React.Component {
             for (let i = 0; i < cartItems.length; i++) {
                 itemsArr.push(cartItems[i])
             }
-            // const cartItemIds = Object.keys(userCartItems).map( (itemId) => {
-            //     userCartItems.itemId;
-            // })
-            debugger
+            // debugger
             if (itemsArr.includes(item)) {
-                debugger
+                // debugger
                 return (
                     <div>
                         <span className='already-added-message'>
@@ -56,8 +49,7 @@ class ItemShow extends React.Component {
                 )
             } else {
                 this.addItem(item);
-                // this.state.addedCartItems.push(item);
-                debugger
+                // debugger
             }
         } else {
             this.props.history.push('/login');
