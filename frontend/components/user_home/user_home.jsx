@@ -109,7 +109,6 @@ class UserHome extends React.Component {
     };
 
     render () {
-
         return this.props.currentUser ? this.loggedInGreeting() : this.loggedOutGreeting();
     }
 };
