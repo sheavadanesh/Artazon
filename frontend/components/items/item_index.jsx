@@ -26,7 +26,7 @@ class ItemIndex extends React.Component {
         } else {
             return (
                 <div className='item-index'>
-                    <span className='all-items-head'>All items</span>
+                    <span className='all-items-head'>Products</span>
                     <ul className='item-listing'>
                         {items.map(item => <ItemIndexItem key={item.id} item={item}/>)}
                     </ul>

@@ -20,7 +20,7 @@ class UserHome extends React.Component {
 
     returnHome() {
         let data = '';
-        this.props.fetchItems(data);    
+        this.props.fetchItems(data); 
     }
 
     loggedInGreeting() {
