@@ -8,7 +8,6 @@ class SearchBar extends React.Component {
         
         this.update = this.update.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-
     }
 
     handleSubmit(e) {

@@ -3,7 +3,6 @@ import SearchBar from './search_bar';
 import { fetchItems, searchItem } from '../../actions/item_actions';
 
 const mapStateToProps = state => {
-    // debugger
     return {
         items: state.entities.items
     }
@@ -12,7 +11,6 @@ const mapStateToProps = state => {
 const mapDisptachToProps = dispatch => {
     return {
         fetchItems: (data) => dispatch(fetchItems(data))
-        // searchItem: (keyword) => dispatch(searchItem(keyword))
     }
 };
 

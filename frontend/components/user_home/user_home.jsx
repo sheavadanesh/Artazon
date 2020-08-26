@@ -10,6 +10,7 @@ class UserHome extends React.Component {
         this.loggedInGreeting = this.loggedInGreeting.bind(this);
         this.loggedOutGreeting = this.loggedOutGreeting.bind(this);
         this.logoutToHome = this.logoutToHome.bind(this);
+        this.returnHome = this.returnHome.bind(this);
     }
 
     logoutToHome() {
@@ -17,20 +18,24 @@ class UserHome extends React.Component {
         this.props.history.push('/items');
     }
 
+    returnHome() {
+        let data = '';
+        this.props.fetchItems(data);    
+    }
+
     loggedInGreeting() {
         return (
             <div className='page'>
             <Redirect to='/items/'/>
                 <div className='navbar'>
-                    {/* <Link to='/'> */}
                     <Link to='/items/' replace>
-                        <div className='nav-logo'>
+                        <div className='nav-logo' onClick={this.returnHome}>
                             <div id='artazon-logo' />
                         </div>
                     </Link>
                     <div className='left-nav-section'>
                         <div className='nav-searchbar'>
-                            <SearchBarContainer/>
+                            <SearchBarContainer />
                         </div>
                         <div className='account-dropdown-container'>
                             <div className='account-dropdown'>
@@ -63,9 +68,8 @@ class UserHome extends React.Component {
         <div className='page'>
         <Redirect to='/items/' />
             <div className='navbar'>
-                {/* <Link to='/'> */}
                 <Link to='/items/' replace>
-                    <div className='nav-logo'>
+                    <div className='nav-logo' onClick={this.returnHome}>
                         <div id='artazon-logo' />
                     </div>
                 </Link>

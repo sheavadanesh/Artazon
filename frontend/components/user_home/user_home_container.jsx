@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import { logout } from '../../actions/session_actions';
+import { fetchItems } from '../../actions/item_actions';
 import UserHome from './user_home';
 
 const mapStateToProps = state => {
@@ -10,7 +11,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        logout: () => dispatch(logout())
+        logout: () => dispatch(logout()),
+        fetchItems: (data) => dispatch(fetchItems(data))
     }
 };
  
