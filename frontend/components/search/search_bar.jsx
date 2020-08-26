@@ -12,7 +12,24 @@ class SearchBar extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
+
+        // debugger
         this.props.fetchItems(this.state.keyword);
+        // if (this.props.items.length === 0) {
+        //     debugger
+        //     return (
+        //         <div className='no-match'>
+        //             <span className='no-match-message'>
+        //                 No items matched your search :(
+        //             </span>
+        //         </div>
+        //     )
+        // }
+        // } else {
+        //     debugger
+        //     this.props.fetchItems(this.state.keyword);
+        //     debugger
+        // }
     }
 
     update(field) {

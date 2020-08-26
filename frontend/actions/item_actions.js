@@ -2,7 +2,6 @@ import * as ItemAPIUtil from '../util/item_api_util';
 
 export const RECEIVE_ALL_ITEMS = 'RECEIVE_ALL_ITEMS';
 export const RECEIVE_ITEM = 'RECEIVE_ITEM';
-// export const ADD_TO_CART = 'ADD_TO_CART'
 
 const receiveItems = (items) => {
     return {

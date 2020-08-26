@@ -4,7 +4,7 @@ import { fetchItems } from '../../actions/item_actions';
 import { selectItems } from '../../reducers/selectors';
 
 const mapStateToProps = state => ({
-    items: selectItems(state) 
+    items: selectItems(state)
 });
 
 const mapDispatchToProps = dispatch => ({
