@@ -49,13 +49,13 @@
     text-align: left;
     border: 1px solid transparent;
     text-decoration: underline;
-    text-decoration-color: transparent;
+    // text-decoration-color: transparent;
 }
 .account-container:hover, .account-container:active {
     outline: none;
     border: 1px solid white;
     border-radius: 3px;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .account-container:focus {
