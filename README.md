@@ -69,7 +69,7 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
 <h4>Search Bar<h4>
 
 <ul>
-    <li>Users can type in any phrase in the search bar located in the navbar at the top of the page.<li>
+    <li>Users can type in any phrase in the search bar located in the navbar at the top of the page.</li>
     <li>Upon hitting enter, any products related to the search term (whether it is part of the title, the artist, style, etc) will render on the page for the user to browse.</li>
     <li>Products are searched for and displayed through an Ajax request, using JSON/jBuilder views as well as ActiveRecord to match the inputted term with any related products.</li>
 <ul>
