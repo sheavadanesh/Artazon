@@ -43,8 +43,6 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
 
 <h4>User Authentication</h4>
 
-
-
 <ul>
     <li>Users can sign up and create an account on Artazon, storing their information to be able to logout and log back in to view their personal account.</li>
     <li>The sign-in and signup forms are separate components which were made using React/Redux and CSS for styling purposes. These forms can be accessed through a dropdown menu from the navigation bar or by clicking on explicit links on the home page. </li>
@@ -70,7 +68,7 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
 
 <h4>Search Bar</h4>
 
-<img src="https://giphy.com/gifs/gkWpyhWaazlPSE62hL/html5" width="480" height="296" frameBorder="0" class="giphy-embed" allowFullScreen></img>
+<img src="https://media.giphy.com/media/gkWpyhWaazlPSE62hL/giphy.gif" width="480" height="296" frameBorder="0" class="giphy-embed" allowFullScreen></img>
 
 <ul>
     <li>Users can type in any phrase in the search bar located in the navbar at the top of the page.</li>
