@@ -1,6 +1,6 @@
 # Artazon
 
-<a href='http://artazon.herokuapp.com/'>Live Site</a>
+View <a href='http://artazon.herokuapp.com/'>Artazon</a>
 
 <h3>Table of Contents</h3>
 
@@ -12,6 +12,8 @@
       <li>User Authentication</li>
       <li>Items Index</li>
       <li>Item Show</li>
+      <li>Search Bar</li>
+      <li>Shopping Cart</li>
     </ul>
   </li>
 </ul>
@@ -32,7 +34,7 @@
     <li>React.js</li>
     <li>Redux.js</li>
     <li>Node.js</li>
-    <li>PostgreSQL</li>
+    <li>SQL/PostgreSQL</li>
     <li>Webpack</li>
     <li>Amazon AWS S3</li>
 </ul>
@@ -62,4 +64,21 @@
     <li>Below the item description and image, there is a section where users can rate and review the item if they are signed in with their account.</li>
     <li>Right below the item's title will be an average rating that the item has received so far.</li>
     <li>Each item's image is linked from a bucket created in Amazon AWS S3.</li>
+</ul>
+
+<h4>Search Bar<h4>
+
+<ul>
+    <li>Users can type in any phrase in the search bar located in the navbar at the top of the page.<li>
+    <li>Upon hitting enter, any products related to the search term (whether it is part of the title, the artist, style, etc) will render on the page for the user to browse.</li>
+    <li>Products are searched for and displayed through an Ajax request, using JSON/jBuilder views as well as ActiveRecord to match the inputted term with any related products.</li>
+<ul>
+
+<h4>Shopping Cart</h4>
+
+<ul>
+    <li>Once users click on a product from any item index (whether it is all items or from a specific search), they have the option to add the item to their cart.</li>
+    <li>Each user has exactly one cart, and each cart can only be accessed if the user is logged in.</li>
+    <li>If the user is not logged in and attempts to add an item to his/her cart, the app renders a login form so that the user can either log in with his/her account information or continue with the guest login option.</li>
+    <li>After the user is satisfied with the items in the cart, he/she can "checkout" by clicking the "Proceed to checkout" button. </li>
 </ul>
