@@ -27,6 +27,8 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
 
 <h4>User Authentication</h4>
 
+<img src="./app/assets/images/user_auth.png" allowFullScreen></img>
+
 <ul>
     <li>Users can sign up and create an account on Artazon, storing their information to be able to logout and log back in to view their personal account.</li>
     <li>The sign-in and signup forms are separate components which were made using React/Redux and CSS for styling purposes. These forms can be accessed through a dropdown menu from the navigation bar or by clicking on explicit links on the home page. </li>
@@ -35,12 +37,16 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
 
 <h4>Items Index</h4>
 
+<img src="./app/assets/images/item_index.png" allowFullScreen></img>
+
 <ul>
     <li>All items are rendered when accessing the home page (which can be accessed by entering the website's URL or clicking on any Artazon logo) or first logging into a user's account.</li>
     <li>Users can go directly to an item's show page by clicking on either the item's title or image on the list. </li>
 </ul>
 
 <h4>Item Show Page</h4>
+
+<img src="./app/assets/images/item_show.png" allowFullScreen></img>
 
 <ul>
     <li>Users can view each item's information page, which includes a high-res image of the art piece, the artist and year created, style and media type, a short description, and the price to purchase the item. </li>
@@ -52,7 +58,7 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
 
 <h4>Search Bar</h4>
 
-<img src="https://media.giphy.com/media/gkWpyhWaazlPSE62hL/giphy.gif" width="480" height="296" frameBorder="0" class="giphy-embed" allowFullScreen></img>
+<img src="https://media.giphy.com/media/gkWpyhWaazlPSE62hL/giphy.gif" width="500" height="310" class="giphy-embed" allowFullScreen></img>
 
 <ul>
     <li>Users can type in any phrase in the search bar located in the navbar at the top of the page.</li>
@@ -61,6 +67,8 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
 </ul>
 
 <h4>Shopping Cart</h4>
+
+<img src="./app/assets/images/user_cart.png" ></img>
 
 <ul>
     <li>Once users click on a product from any item index (whether it is all items or from a specific search), they have the option to add the item to their cart.</li>
