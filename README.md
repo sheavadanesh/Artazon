@@ -2,22 +2,6 @@
 
 View <a href='http://artazon.herokuapp.com/'>Artazon</a>
 
-<h3>Table of Contents</h3>
-
-<ul>
-  <li>Background</li>
-  <li>Technologies</li>
-  <li>Features
-    <ul>
-      <li>User Authentication</li>
-      <li>Items Index</li>
-      <li>Item Show</li>
-      <li>Search Bar</li>
-      <li>Shopping Cart</li>
-    </ul>
-  </li>
-</ul>
-
 <h3>Background</h3>
 
 <p>
