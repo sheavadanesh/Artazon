@@ -68,7 +68,7 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
     <li>Each item's image is linked from a bucket created in Amazon AWS S3.</li>
 </ul>
 
-<h4>Search Bar<h4>
+<h4>Search Bar</h4>
 
 <iframe src="https://giphy.com/embed/gkWpyhWaazlPSE62hL" width="480" height="296" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/gkWpyhWaazlPSE62hL"></a></p>
 
@@ -76,7 +76,7 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
     <li>Users can type in any phrase in the search bar located in the navbar at the top of the page.</li>
     <li>Upon hitting enter, any products related to the search term (whether it is part of the title, the artist, style, etc) will render on the page for the user to browse.</li>
     <li>Products are searched for and displayed through an Ajax request, using JSON/jBuilder views as well as ActiveRecord to match the inputted term with any related products.</li>
-<ul>
+</ul>
 
 <h4>Shopping Cart</h4>
 
