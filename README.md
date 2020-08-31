@@ -70,7 +70,7 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
 
 <h4>Search Bar</h4>
 
-<iframe src="https://giphy.com/embed/gkWpyhWaazlPSE62hL" width="480" height="296" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/gkWpyhWaazlPSE62hL"></a></p>
+<img src="https://giphy.com/embed/gkWpyhWaazlPSE62hL" width="480" height="296" frameBorder="0" class="giphy-embed" allowFullScreen></img>
 
 <ul>
     <li>Users can type in any phrase in the search bar located in the navbar at the top of the page.</li>
