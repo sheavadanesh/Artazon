@@ -2,7 +2,7 @@
 
 View <a href='http://artazon.herokuapp.com/'>Artazon</a>
 
-<h3>Background</h3>
+<h2>Background</h2>
 
 <p>
   Artazon is a full stack web application used to buy/sell famous artworks, inspired by the website Amazon. This application allows users to create an account and sign in, storing their inputted data in the PostgreSQL database. There is also an option for users to continue into the application using a guest login feature. This way the user does not need to create an account to browse through different products and get the full customer experience. On the items index page, users are able to interact with individual items, clicking into the item show page to view details and potentially purchase the item.
@@ -10,7 +10,7 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
   This site was built on a Ruby on Rails framework for the backend with Active Record to avoid N+1 queries. The database utilized to store user/product data was PostgreSQL, along with Amazon AWS S3 which was used to store product images. React and Redux with Node.js were the technologies used for frontend frameworks in order to create a dynamic, single-page web application, allowing for a smooth navigation throughout the website. 
 </p>
 
-<h3>Technologies</h3>
+<h2>Technologies</h2>
 
 <ul>
     <li>Ruby (v 2.5.1)</li>
@@ -23,9 +23,9 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
     <li>Amazon AWS S3</li>
 </ul>
 
-<h3>Features</h3>
+<h2>Features</h2>
 
-<h4>User Authentication</h4>
+<h3>User Authentication</h3>
 
 <img src="./app/assets/images/user_auth.png" width="600" height="410" allowFullScreen></img>
 
@@ -35,7 +35,7 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
     <li>For users who do not want to create their own account but still want to explore the full features of the website, a demo login feature is available that serves as a guest login.</li>
 </ul>
 
-<h4>Items Index</h4>
+<h3>Items Index</h3>
 
 <img src="./app/assets/images/item_index.png" width="600" height="410" allowFullScreen></img>
 
@@ -44,7 +44,7 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
     <li>Users can go directly to an item's show page by clicking on either the item's title or image on the list. </li>
 </ul>
 
-<h4>Item Show Page</h4>
+<h3>Item Show Page</h3>
 
 <img src="./app/assets/images/item_show.png" width="600" height="410" allowFullScreen></img>
 
@@ -56,7 +56,7 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
     <li>Each item's image is linked from a bucket created in Amazon AWS S3.</li>
 </ul>
 
-<h4>Search Bar</h4>
+<h3>Search Bar</h3>
 
 <img src="https://media.giphy.com/media/gkWpyhWaazlPSE62hL/giphy.gif" width="600" height="410" class="giphy-embed" allowFullScreen></img>
 
@@ -66,7 +66,7 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
     <li>Products are searched for and displayed through an Ajax request, using JSON/jBuilder views as well as ActiveRecord to match the inputted term with any related products.</li>
 </ul>
 
-<h4>Shopping Cart</h4>
+<h3>Shopping Cart</h3>
 
 <img src="./app/assets/images/user_cart.png" width="600" height="410" ></img>
 
