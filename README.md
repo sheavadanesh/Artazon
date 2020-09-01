@@ -121,3 +121,4 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
 
 <p>Frontend React component snippet for shopping cart:</p>
 <img src="./app/assets/images/frontend_cart.png" width="500" height="310"
+allowFullScreen></img>
