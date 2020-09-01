@@ -98,7 +98,7 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
 
 
 <p>Backend SQL ActiveRecord snippet for search feature:</p>
-<img src="./app/assets/images/backend_search_snip.png" width="500" height="310" allowFullScreen></img>
+<img src="./app/assets/images/backend_search_snip.png" width="500" height="150" allowFullScreen></img>
 
 <p>Frontend React component snippet for searchbar:</p>
 <img src="./app/assets/images/frontend_search.png" width="500" height="310" allowFullScreen></img>
@@ -120,5 +120,5 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
 
 
 <p>Frontend React component snippet for shopping cart:</p>
-<img src="./app/assets/images/frontend_cart.png" width="500" height="310"
+<img src="./app/assets/images/frontend_cart.png" width="450" height="310"
 allowFullScreen></img>
