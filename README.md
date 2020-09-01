@@ -27,6 +27,7 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
 
 <h3>User Authentication</h3>
 
+
 <img src="./app/assets/images/user_auth.png" width="600" height="410" allowFullScreen></img>
 
 <ul>
@@ -35,7 +36,18 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
     <li>For users who do not want to create their own account but still want to explore the full features of the website, a demo login feature is available that serves as a guest login.</li>
 </ul>
 
+<h4>Code Snippets</h4>
+
+
+<p>Backend Ruby model snippet for user authentication:</p>
+<img src="./app/assets/images/backend_user_auth.png" width="500" height="310" allowFullScreen></img>
+
+<p>Frontend React component snippet for user authentication:</p>
+<img src="./app/assets/images/user_auth_snip.png" width="500" height="310" allowFullScreen></img>
+
+
 <h3>Items Index</h3>
+
 
 <img src="./app/assets/images/item_index.png" width="600" height="410" allowFullScreen></img>
 
@@ -44,7 +56,15 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
     <li>Users can go directly to an item's show page by clicking on either the item's title or image on the list. </li>
 </ul>
 
+<h4>Code Snippets</h4>
+
+
+<p>Frontend React component snippet for product index:</p>
+<img src="./app/assets/images/item_index_snip.png" width="500" height="310" allowFullScreen></img>
+
+
 <h3>Item Show Page</h3>
+
 
 <img src="./app/assets/images/item_show.png" width="600" height="410" allowFullScreen></img>
 
@@ -56,7 +76,15 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
     <li>Each item's image is linked from a bucket created in Amazon AWS S3.</li>
 </ul>
 
+<h4>Code Snippets</h4>
+
+
+<p>Frontend React component snippet for item show page:</p>
+<img src="./app/assets/images/item_show_snip.png" width="500" height="310" allowFullScreen></img>
+
+
 <h3>Search Bar</h3>
+
 
 <img src="https://media.giphy.com/media/gkWpyhWaazlPSE62hL/giphy.gif" width="600" height="410" class="giphy-embed" allowFullScreen></img>
 
@@ -66,7 +94,18 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
     <li>Products are searched for and displayed through an Ajax request, using JSON/jBuilder views as well as ActiveRecord to match the inputted term with any related products.</li>
 </ul>
 
+<h4>Code Snippets</h4>
+
+
+<p>Backend SQL ActiveRecord snippet for search feature:</p>
+<img src="./app/assets/images/backend_search_snip.png" width="500" height="310" allowFullScreen></img>
+
+<p>Frontend React component snippet for searchbar:</p>
+<img src="./app/assets/images/frontend_search.png" width="500" height="310" allowFullScreen></img>
+
+
 <h3>Shopping Cart</h3>
+
 
 <img src="./app/assets/images/user_cart.png" width="600" height="410" ></img>
 
@@ -76,3 +115,9 @@ View <a href='http://artazon.herokuapp.com/'>Artazon</a>
     <li>If the user is not logged in and attempts to add an item to his/her cart, the app renders a login form so that the user can either log in with his/her account information or continue with the guest login option.</li>
     <li>After the user is satisfied with the items in the cart, he/she can "checkout" by clicking the "Proceed to checkout" button. </li>
 </ul>
+
+<h4>Code Snippets</h4>
+
+
+<p>Frontend React component snippet for shopping cart:</p>
+<img src="./app/assets/images/frontend_cart.png" width="500" height="310"

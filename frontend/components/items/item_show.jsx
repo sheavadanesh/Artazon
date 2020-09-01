@@ -55,7 +55,6 @@ class ItemShow extends React.Component {
 
     render() {
         const { item } = this.props;
-        debugger
         let updatedPrice = (Math.round(item.price * 100)/100).toFixed(2);
 
         if (item === undefined) return null;
@@ -136,7 +135,6 @@ class ItemShow extends React.Component {
                     // </div> */}
                     </div>
                     <div className='right-side'>
-
                     </div>
                 </footer>
             </div>

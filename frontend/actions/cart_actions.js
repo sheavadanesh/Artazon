@@ -19,7 +19,6 @@ const recieveCartItem = cartItem => {
 }
 
 const removeCartItem = cartItemId => {
-    // debugger
     return {
         type: REMOVE_CART_ITEM,
         cartItemId: cartItemId.id
@@ -45,7 +44,6 @@ export const createCartItem = cartItem => dispatch => {
 }
 
 export const deleteCartItem = cartItemId => dispatch => {
-    // debugger
     return (
         CartItemAPIUtil.deleteCartItem(cartItemId).then((cartItemId) => dispatch(removeCartItem(cartItemId)))
     )
