@@ -7,9 +7,13 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
-    <%# <link rel='stylesheet' href="https://fontawesome.com/"/> %>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
   </head>
+
+  <meta property="og:title" content="Artazon" />
+  <meta property='og:image' content="<%= image_url('item_index.png') %>"/>
+  <meta property="og:description" content="Artazon is a full stack web application used to buy/sell famous artworks, inspired by the website Amazon."/>
+  <meta property="og:url" content="http://artazon.herokuapp.com/" />
 
   <body>
     <%= yield %>
