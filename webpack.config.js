@@ -12,6 +12,7 @@ module.exports = {
     },
     module: {
         rules: [
+            // rules is an array of questions that Webpack will answer.
             {
                 test: /\.jsx?$/,
                 exclude: /(node_modules)/,
@@ -22,6 +23,9 @@ module.exports = {
                     }
                 },
             }
+            // test asks Webpack to use babel-loader (IDed at use.loader) when
+            // coming across any file that resolves to .jsx (excluding node_modules)
+            // to transform it before bundling.
         ]
     },
     devtool: 'source-map'
