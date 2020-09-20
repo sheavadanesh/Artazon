@@ -29,4 +29,5 @@ module.exports = {
         ]
     },
     devtool: 'source-map'
+    // enables debugger to work with a source map, which holds info about original files.
 };
