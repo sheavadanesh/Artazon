@@ -6,6 +6,8 @@ class ItemIndex extends React.Component {
         super(props)
     };
 
+    // ensures that if the component did mount (or placed itself where it needs
+    // to be placed), then it calls fetchItems() on the props
     componentDidMount() {
         this.props.fetchItems();
     }

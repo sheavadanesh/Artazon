@@ -14,6 +14,9 @@ local:
 #   region: us-east-1
 #   bucket: your_own_bucket
 
+# This is what connects the app to AWS, by storing a secret key, defining the region
+# where we are using the app, and corresponding bucket to that on AWS S3 service.
+
 amazon_dev:
   service: S3
   access_key_id: <%= Rails.application.credentials.aws[:access_key_id] %>

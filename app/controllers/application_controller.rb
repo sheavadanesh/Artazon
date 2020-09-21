@@ -1,9 +1,8 @@
 class ApplicationController < ActionController::Base
-    # skip_before_action :verify_authenticity_token
     helper_method :current_user, :logged_in?
 
     def login!(user)
-        # set the session_token for the connection to be the 
+        # we are hashing the user's session token to the current session object
         session[:session_token] = user.session_token
     end
 
